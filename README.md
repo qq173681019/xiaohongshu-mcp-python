@@ -237,7 +237,7 @@ MCP_HOST=127.0.0.1
 MCP_PORT=8003
 
 # 通义万相配置（图像生成）
-WANT2I_API_KEY=your_api_key
+WANT2I_API_KEY=sk-17a3f073c8d3405bb1a2c9d8b159f250
 WANT2I_BASE_URL=https://dashscope.aliyuncs.com/compatible-mode/v1
 ```
 
