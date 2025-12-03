@@ -22,7 +22,7 @@ class MCPConfig(BaseSettings):
     )
 
     # 小红书MCP服务配置
-    xiaohongshu_mcp_url: str = "http://127.0.0.1:8002/mcp"
+    xiaohongshu_mcp_url: str = "http://127.0.0.1:8000/mcp"
     xiaohongshu_mcp_transport: str = "streamable_http"  # streamable_http 或 stdio
 
     # 图像视频生成MCP服务配置
