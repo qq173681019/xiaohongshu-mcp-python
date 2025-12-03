@@ -51,9 +51,11 @@ ROUTER_SYSTEM_PROMPT = """你是一个智能路由助手，负责分析用户意
 3. **end**: 当对话可以自然结束时（如用户说再见、完成任务等）
 
 ## 输出格式
-你需要以 JSON 格式输出决策结果，包含以下字段：
+**重要：你必须只返回纯 JSON，不要有任何其他文本或解释。**
+
+JSON 格式包含以下字段：
 - next_agent: "xhs_agent" | "wait" | "end"
-- intent: 识别的意图类型
+- intent: 识别的意图类型 (create_content, query_status, get_help, casual_chat, feedback)
 - reasoning: 决策理由
 - response: 给用户的回复
 - extracted_params: 从用户消息中提取的参数（如内容描述、图片数量等）
@@ -172,9 +174,10 @@ class RouterAgent(BaseAgent):
     
     @property
     def structured_llm(self):
-        """获取支持结构化输出的 LLM"""
+        """获取支持 JSON 输出的 LLM"""
         if self._structured_llm is None:
-            self._structured_llm = self.llm.with_structured_output(RouterOutput)
+            # 使用 JSON mode 而不是 structured output (兼容 DeepSeek)
+            self._structured_llm = self.llm
         return self._structured_llm
     
     async def _execute(self, state: AgentState) -> dict[str, Any]:
@@ -219,9 +222,34 @@ class RouterAgent(BaseAgent):
         )
         
         try:
-            # 调用 LLM 进行结构化决策
+            # 调用 LLM 进行 JSON 决策（兼容 DeepSeek）
             messages_with_system = self.get_messages_with_system(messages)
-            output: RouterOutput = await self.structured_llm.ainvoke(messages_with_system)
+            response = await self.structured_llm.ainvoke(messages_with_system)
+            
+            # 解析 JSON 响应
+            import json
+            import re
+            
+            # 提取 JSON（处理可能的 markdown 代码块）
+            content = response.content if hasattr(response, 'content') else str(response)
+            self.logger.info(f"LLM 原始响应（前200字符）: {content[:200]}")
+            
+            json_match = re.search(r'```json\s*(\{.*?\})\s*```', content, re.DOTALL)
+            if json_match:
+                json_str = json_match.group(1)
+                self.logger.info("从 markdown 代码块提取 JSON")
+            else:
+                # 尝试直接解析
+                json_match = re.search(r'\{.*\}', content, re.DOTALL)
+                json_str = json_match.group(0) if json_match else content
+                self.logger.info("直接提取 JSON")
+            
+            self.logger.info(f"提取的 JSON（前200字符）: {json_str[:200]}")
+            
+            # 解析为字典
+            output_dict = json.loads(json_str)
+            self.logger.info(f"JSON 解析成功: {output_dict}")
+            output = RouterOutput(**output_dict)
             
             # 转换为 RouterDecision
             decision = self._create_decision(output)
@@ -258,7 +286,9 @@ class RouterAgent(BaseAgent):
             }
             
         except Exception as e:
-            self.logger.error(f"Router decision failed: {e}")
+            self.logger.error(f"Router decision failed: {e}", exc_info=True)
+            import traceback
+            self.logger.error(f"Traceback: {traceback.format_exc()}")
             # 出错时返回等待状态
             return self._create_fallback_response(state, str(e))
     
