@@ -177,57 +177,85 @@
 
 ### 📋 环境要求
 
-- Python >= 3.11
-- uv 包管理器
-- 支持的操作系统：Linux, macOS, Windows
+- **Python >= 3.11**
+- **uv 包管理器**（快速安装 Python 依赖）
+- **支持的操作系统**：Linux, macOS, Windows
+- **通义万相 API Key**（图像生成，[获取地址](https://dashscope.aliyun.com/)）
+- **小红书账号**（需要在浏览器中登录）
 
-### 🔧 安装步骤
+### 🔧 一键安装与配置
 
-1. **克隆项目**
-   ```bash
-   git clone git@github.com:luyike221/xiaohongshu-mcp-python.git
-   cd xiaohongshu-mcp-python
-   ```
+#### 步骤 1：克隆项目
 
-2. **安装 uv 包管理器**
-   ```bash
-   # macOS/Linux
-   curl -LsSf https://astral.sh/uv/install.sh | sh
-   
-   # Windows
-   powershell -c "irm https://astral.sh/uv/install.ps1 | iex"
-   ```
+```bash
+git clone git@github.com:luyike221/xiaohongshu-mcp-python.git
+cd xiaohongshu-mcp-python
+```
 
-3. **安装项目依赖**
+#### 步骤 2：安装 uv 包管理器
 
-   **安装图像视频生成 MCP 服务：**
-   ```bash
-   cd image_video_mcp
-   uv sync
-   ```
+**macOS/Linux:**
+```bash
+curl -LsSf https://astral.sh/uv/install.sh | sh
+```
 
-   **安装小红书内容生成 MCP 服务：**
-   ```bash
-   cd xhs-content-generator-mcp
-   uv sync
-   ```
+**Windows PowerShell:**
+```powershell
+powershell -c "irm https://astral.sh/uv/install.ps1 | iex"
+```
 
-   **安装小红书浏览器自动化 MCP 服务：**
-   ```bash
-   cd xhs-browser-automation-mcp
-   uv sync
-   uv run playwright install chromium
-   ```
+安装完成后，重启终端使 `uv` 命令生效。
 
-   **安装 AI 调度系统：**
-   ```bash
-   cd ai_social_scheduler
-   uv sync
-   ```
+#### 步骤 3：安装所有项目依赖
 
-### ⚙️ 配置
+**方式一：自动安装所有依赖（推荐）**
 
-#### 图像视频生成 MCP 服务配置
+在项目根目录运行安装脚本：
+
+**Windows PowerShell:**
+```powershell
+# 安装所有项目依赖
+cd image_video_mcp ; uv sync ; cd ..
+cd xhs-content-generator-mcp ; uv sync ; cd ..
+cd xhs-browser-automation-mcp ; uv sync ; uv run playwright install chromium ; cd ..
+cd ai_social_scheduler ; uv sync ; cd ..
+```
+
+**macOS/Linux:**
+```bash
+# 安装所有项目依赖
+cd image_video_mcp && uv sync && cd ..
+cd xhs-content-generator-mcp && uv sync && cd ..
+cd xhs-browser-automation-mcp && uv sync && uv run playwright install chromium && cd ..
+cd ai_social_scheduler && uv sync && cd ..
+```
+
+**方式二：逐个安装（可选）**
+
+如果只需要使用部分功能，可以选择性安装：
+
+```bash
+# 安装图像视频生成服务（必需）
+cd image_video_mcp
+uv sync
+
+# 安装小红书内容生成服务（必需）
+cd xhs-content-generator-mcp
+uv sync
+
+# 安装小红书浏览器自动化服务（必需）
+cd xhs-browser-automation-mcp
+uv sync
+uv run playwright install chromium
+
+# 安装 AI 调度系统（推荐）
+cd ai_social_scheduler
+uv sync
+```
+
+#### 步骤 4：配置 API Keys 和环境变量
+
+**4.1 配置图像视频生成服务**
 
 在 `image_video_mcp` 目录下创建 `.env` 文件：
 
@@ -236,198 +264,652 @@
 MCP_HOST=127.0.0.1
 MCP_PORT=8003
 
-# 通义万相配置（图像生成）
-WANT2I_API_KEY=sk-17a3f073c8d3405bb1a2c9d8b159f250
+# 通义万相 API 配置（必需）
+# 获取地址：https://dashscope.aliyun.com/
+WANT2I_API_KEY=sk-your-api-key-here
 WANT2I_BASE_URL=https://dashscope.aliyuncs.com/compatible-mode/v1
 ```
 
-#### 小红书内容生成 MCP 服务配置
-
-在 `xhs-content-generator-mcp` 目录下创建 `.env` 文件（可选）：
-
-```env
-# 服务器配置
-MCP_HOST=0.0.0.0
-MCP_PORT=8001
-```
-
-#### 小红书浏览器自动化 MCP 服务配置
+**4.2 配置小红书浏览器自动化服务**
 
 在 `xhs-browser-automation-mcp` 目录下创建 `.env` 文件：
 
 ```env
-# 环境模式: development 或 production
+# 环境模式: development（开发）或 production（生产）
 ENV=development
 
 # 服务器配置
 SERVER_HOST=127.0.0.1
 SERVER_PORT=8000
 
-# 默认用户
-GLOBAL_USER=your_username
+# 默认用户名（可选，用于多账号管理）
+GLOBAL_USER=default_user
 ```
 
-#### AI 调度系统配置
+**4.3 配置 AI 调度系统（可选）**
 
-在 `ai_social_scheduler` 目录下创建配置文件：
+AI 调度系统可以使用默认配置，如需自定义：
 
 ```bash
-cp config/config.example.yaml config/config.yaml
+cd ai_social_scheduler
+# 复制示例配置文件（如果存在）
+# cp config/config.example.yaml config/config.yaml
 # 编辑 config/config.yaml 填入实际配置
 ```
 
-### 🎯 启动服务
+#### 步骤 5：一键启动所有服务
 
-#### 启动图像视频生成 MCP 服务
+**Windows PowerShell（推荐使用提供的启动脚本）:**
 
-```bash
-cd image_video_mcp
-uv run python -m image_video_mcp.main
+项目根目录下提供了便捷启动脚本：
+
+```powershell
+# 使用便捷启动脚本
+python start_xiaohongshu_automation.py
 ```
 
-服务将在 `http://localhost:8003` 启动。
+或手动启动（在不同的 PowerShell 窗口中）：
 
-#### 启动小红书内容生成 MCP 服务
+```powershell
+# 窗口 1：启动图像生成服务
+cd image_video_mcp
+uv run python -m image_video_mcp.main
 
-```bash
+# 窗口 2：启动浏览器自动化服务
+cd xhs-browser-automation-mcp
+uv run python -m xiaohongshu_mcp_python.main
+
+# 窗口 3：启动内容生成服务（可选）
 cd xhs-content-generator-mcp
 uv run python -m xhs_content_generator_mcp.main
 ```
 
-服务将在 `http://localhost:8001` 启动（默认端口 8000，可通过参数指定）。
+**macOS/Linux:**
 
-#### 启动小红书浏览器自动化 MCP 服务
+```bash
+# 使用便捷启动脚本
+python3 start_xiaohongshu_automation.py
+```
+
+或手动启动（在不同的终端窗口中）：
+
+```bash
+# 终端 1：启动图像生成服务
+cd image_video_mcp
+uv run python -m image_video_mcp.main
+
+# 终端 2：启动浏览器自动化服务
+cd xhs-browser-automation-mcp
+uv run python -m xiaohongshu_mcp_python.main
+
+# 终端 3：启动内容生成服务（可选）
+cd xhs-content-generator-mcp
+uv run python -m xhs_content_generator_mcp.main
+```
+
+#### 步骤 6：登录小红书账号
+
+服务启动后，浏览器自动化服务会自动打开浏览器窗口：
+
+1. **首次使用**：浏览器会打开小红书登录页面
+2. **手动登录**：使用你的小红书账号登录（扫码或密码登录均可）
+3. **保持登录**：登录成功后，系统会自动保存 Cookie，下次启动无需重新登录
+4. **验证登录**：看到浏览器标题显示"小红书"且能正常访问，说明登录成功
+
+> 💡 **提示**：登录信息会保存在 `xhs-browser-automation-mcp/storage/cookies/` 目录下，请妥善保管。
+
+#### 步骤 7：验证服务状态
+
+打开浏览器访问以下地址，确认服务正常运行：
+
+- **图像生成服务**: http://localhost:8003
+- **浏览器自动化服务**: http://localhost:8000
+- **内容生成服务**: http://localhost:8001（如果启动了）
+
+看到服务响应说明启动成功！
+
+---
+
+### 🎯 三种使用方式
+
+#### 方式一：使用便捷脚本（最简单，推荐新手）
+
+项目根目录提供了简单易用的 Python 脚本：
+
+```bash
+# 使用自动化启动脚本（已包含服务启动）
+python start_xiaohongshu_automation.py
+
+# 或使用免费图像生成脚本
+python free_image_gen.py
+```
+
+这些脚本会自动：
+- 检查服务状态
+- 启动所需服务
+- 提供友好的交互界面
+
+#### 方式二：使用交互式命令行（灵活，适合快速测试）
+
+启动 AI 调度系统的交互式客户端：
+
+```bash
+cd ai_social_scheduler
+uv run python chat.py
+```
+
+然后直接与 AI 对话：
+
+```
+[新对话] 请输入消息: 写一篇关于咖啡的小红书，配3张图
+
+AI 会自动：
+1. 生成小红书文案
+2. 调用图像生成服务创建3张配图
+3. 打开浏览器发布到小红书
+4. 返回发布结果
+```
+
+支持的命令：
+- 输入任何消息：与 AI 对话，让 AI 帮你完成任务
+- `quit` 或 `exit`：退出程序
+- `reset`：重置对话，开始新的话题
+
+#### 方式三：通过 HTTP API 调用（高级，适合集成）
+
+启动 HTTP API 服务：
+
+```bash
+cd ai_social_scheduler
+uv run python run.py
+```
+
+服务将在 `http://localhost:8012` 启动。
+
+使用 curl 或其他工具调用：
+
+```bash
+# 发送聊天消息
+curl -X POST http://localhost:8012/api/v1/chat \
+  -H "Content-Type: application/json" \
+  -d '{
+    "message": "写一篇关于咖啡的小红书，配3张图",
+    "thread_id": null
+  }'
+
+# 返回示例
+{
+  "thread_id": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+  "response": "好的，我来帮你创建一篇关于咖啡的小红书...",
+  "message_count": 2
+}
+```
+
+---
+
+### 💡 常见问题与解决
+
+#### Q1: 服务启动失败，提示端口被占用？
+
+**解决方法：**
+```bash
+# Windows 查看端口占用
+netstat -ano | findstr "8000"
+netstat -ano | findstr "8003"
+
+# 结束占用端口的进程
+taskkill /PID <进程ID> /F
+
+# Linux/macOS 查看端口占用
+lsof -i :8000
+lsof -i :8003
+
+# 结束占用端口的进程
+kill -9 <进程ID>
+```
+
+或修改 `.env` 文件中的端口配置。
+
+#### Q2: Playwright 安装失败或浏览器无法启动？
+
+**解决方法：**
+```bash
+# 重新安装 Playwright 浏览器
+cd xhs-browser-automation-mcp
+uv run playwright install chromium --with-deps
+
+# 如果仍然失败，尝试安装完整版
+uv run playwright install --with-deps
+```
+
+#### Q3: 图像生成失败，提示 API Key 错误？
+
+**解决方法：**
+1. 检查 `image_video_mcp/.env` 文件中的 `WANT2I_API_KEY` 是否正确
+2. 访问 https://dashscope.aliyun.com/ 确认 API Key 有效且有余额
+3. 确认 API Key 权限包含图像生成功能
+
+#### Q4: 小红书登录后提示 Cookie 过期？
+
+**解决方法：**
+1. 删除旧的 Cookie 文件：
+   ```bash
+   # Windows
+   del xhs-browser-automation-mcp\storage\cookies\*.json
+   
+   # Linux/macOS
+   rm xhs-browser-automation-mcp/storage/cookies/*.json
+   ```
+2. 重启服务，重新登录
+
+#### Q5: 如何只使用部分功能（比如只生成图片）？
+
+**解决方法：**
+
+如果只需要图像生成功能：
+
+```bash
+# 只启动图像生成服务
+cd image_video_mcp
+uv run python -m image_video_mcp.main
+
+# 使用免费图像生成脚本
+python free_image_gen.py
+```
+
+如果只需要发布内容（不生成图片）：
+
+```bash
+# 只启动浏览器自动化服务
+cd xhs-browser-automation-mcp
+uv run python -m xiaohongshu_mcp_python.main
+
+# 手动调用 MCP 工具发布内容
+```
+
+---
+
+### 🎓 使用教程视频
+
+> 📹 **即将推出**：完整的视频教程，从安装到发布第一篇小红书
+
+---
+
+## 📖 完整使用指南
+
+### 📝 场景一：AI 全自动生成并发布小红书（最简单）
+
+这是**最推荐的使用方式**，只需要一句话，AI 会自动完成所有工作。
+
+#### 使用步骤：
+
+1. **启动服务**（使用便捷脚本）
+
+```bash
+# 在项目根目录运行
+python start_xiaohongshu_automation.py
+```
+
+脚本会自动启动所有必需的服务（图像生成 + 浏览器自动化）。
+
+2. **与 AI 对话**
+
+启动交互式聊天客户端：
+
+```bash
+cd ai_social_scheduler
+uv run python chat.py
+```
+
+3. **输入你的需求**
+
+```
+[新对话] 请输入消息: 写一篇关于手冲咖啡的小红书，配3张精美的咖啡图片
+
+📤 发送中...
+📥 AI 回复:
+好的！我来帮你创建一篇关于手冲咖啡的小红书笔记...
+
+正在生成内容文案...
+正在生成第1张图片：手冲咖啡器具特写...
+正在生成第2张图片：咖啡豆研磨过程...
+正在生成第3张图片：成品咖啡...
+正在发布到小红书...
+
+✅ 发布成功！
+```
+
+**AI 会自动完成**：
+1. ✅ 生成吸引人的小红书文案
+2. ✅ 创建 3 张高质量的咖啡主题图片
+3. ✅ 添加合适的标签和话题
+4. ✅ 自动打开浏览器发布到小红书
+5. ✅ 返回发布结果和链接
+
+#### 更多示例：
+
+```bash
+# 美食类
+写一篇关于火锅的小红书，配5张图
+
+# 旅游类  
+写一篇关于杭州西湖的旅游攻略，配6张美景图
+
+# 时尚类
+写一篇秋冬穿搭指南，配4张穿搭图片
+
+# 美妆类
+写一篇新手化妆教程，配图展示化妆步骤
+
+# 生活方式
+分享一个早起的好处，配3张清晨阳光图
+```
+
+---
+
+### 🎨 场景二：只生成图片（不发布）
+
+如果你只想生成图片，不想发布到小红书：
+
+#### 使用方式一：使用免费图像生成脚本
+
+```bash
+# 在项目根目录运行
+python free_image_gen.py
+```
+
+按照提示输入你想生成的图片描述：
+
+```
+请输入图片描述: 一杯冒着热气的手冲咖啡，旁边是咖啡豆和器具
+
+正在生成图片...
+✅ 图片已保存到: test_image_1234567890.jpg
+```
+
+#### 使用方式二：通过 MCP 客户端调用
+
+如果你使用支持 MCP 的 AI 工具（如 Cursor、Claude Desktop）：
+
+```python
+# 调用图像生成工具
+generate_image(
+    prompt="一杯精美的手冲咖啡",
+    n=1,
+    size="1024x1024",
+    style="<auto>"
+)
+```
+
+---
+
+### 📱 场景三：手动发布内容到小红书
+
+如果你已有文案和图片，想直接发布到小红书：
+
+#### 步骤 1：准备素材
+
+```
+标题：手冲咖啡的正确打开方式
+内容：分享我的手冲咖啡心得...
+图片：/path/to/image1.jpg, /path/to/image2.jpg
+标签：咖啡, 手冲咖啡, 生活方式
+```
+
+#### 步骤 2：启动浏览器自动化服务
 
 ```bash
 cd xhs-browser-automation-mcp
 uv run python -m xiaohongshu_mcp_python.main
 ```
 
-服务将在 `http://localhost:8000` 启动。
+#### 步骤 3：调用发布工具
 
-#### 启动 AI 调度系统
+通过 MCP 客户端或 HTTP API 调用：
 
-**方式一：启动 HTTP API 服务（推荐）**
-
-使用 `run.py` 启动 FastAPI 服务器，提供 HTTP 接口：
-
-```bash
-cd ai_social_scheduler
-uv run python run.py
-```
-
-服务将在 `http://0.0.0.0:8012` 启动，提供以下接口：
-- `POST /api/v1/chat` - 聊天接口，发送消息获取 AI 回复
-
-**方式二：使用交互式聊天客户端**
-
-使用 `chat.py` 启动交互式命令行客户端：
-
-```bash
-cd ai_social_scheduler
-uv run python chat.py
-```
-
-启动后可以：
-- 直接输入消息与 AI Agent 对话
-- 输入 `quit` 或 `exit` 退出
-- 输入 `reset` 重置对话线程
-
-**方式三：直接运行主程序**
-
-```bash
-cd ai_social_scheduler
-uv run python main.py
+```python
+# MCP 工具调用
+xiaohongshu_publish_content(
+    title="手冲咖啡的正确打开方式",
+    content="分享我的手冲咖啡心得...",
+    images=["/path/to/image1.jpg", "/path/to/image2.jpg"],
+    tags=["咖啡", "手冲咖啡", "生活方式"]
+)
 ```
 
 ---
 
-## 📖 使用指南
+### 🔍 场景四：搜索和获取小红书内容
 
-### 场景一：使用内容生成服务
+如果你想搜索小红书内容或获取某个笔记的详情：
 
-如果你需要生成小红书内容，可以使用 `xhs-content-generator-mcp`：
-
-```python
-# 通过 MCP 客户端调用
-{
-  "tool": "generate_content",
-  "parameters": {
-    "topic": "春日美食",
-    "content_type": "note"
-  }
-}
-```
-
-### 场景二：直接使用小红书浏览器自动化 MCP 服务
-
-如果你只需要直接操作小红书平台，可以使用 `xhs-browser-automation-mcp`：
+#### 搜索小红书内容
 
 ```python
-# 通过 MCP 客户端调用
-{
-  "tool": "xiaohongshu_publish_content",
-  "parameters": {
-    "title": "春日美景",
-    "content": "分享今天拍摄的美丽春景！",
-    "images": ["/path/to/image1.jpg", "/path/to/image2.jpg"],
-    "tags": ["春天", "摄影", "美景"]
-  }
-}
+# MCP 工具调用
+xiaohongshu_search_notes(
+    keyword="手冲咖啡",
+    page=1,
+    page_size=20,
+    sort_type="general"  # general: 综合排序, time_descending: 最新
+)
 ```
 
-### 场景三：使用 AI 智能运营
+#### 获取笔记详情
 
-如果你需要AI自主运营，可以使用 `ai_social_scheduler`：
+```python
+# MCP 工具调用
+xiaohongshu_get_note_detail(
+    note_id="笔记ID"
+)
+```
 
-**方式一：使用交互式聊天客户端（最简单）**
+#### 获取首页推荐
+
+```python
+# MCP 工具调用
+xiaohongshu_get_home_feed(
+    page_size=20
+)
+```
+
+---
+
+### 🚀 场景五：批量发布和定时发布（高级）
+
+如果你需要批量发布多篇小红书或定时发布：
+
+#### 批量发布
 
 ```bash
+# 启动 AI 调度系统
 cd ai_social_scheduler
 uv run python chat.py
 ```
 
-启动后直接与 AI 对话：
+然后输入：
+
 ```
-[新对话] 请输入消息: 帮我写一篇关于美食的小红书
-📤 发送中...
-📥 AI 回复:
-好的，我来帮你创建一篇关于美食的小红书内容...
+[新对话] 请输入消息: 帮我创建5篇关于健康生活的小红书，主题分别是：早起、运动、饮食、睡眠、心态
+
+AI 会自动：
+1. 为每个主题生成文案
+2. 为每篇内容生成配图
+3. 依次发布到小红书
+4. 返回所有发布结果
 ```
 
-**方式二：通过 HTTP API 调用**
+#### 定时发布（即将支持）
 
-1. 启动 API 服务：
+```
+[新对话] 请输入消息: 每天早上9点自动发布一篇励志内容
+
+AI 会：
+1. 创建定时任务
+2. 每天定时生成和发布内容
+3. 根据数据反馈优化策略
+```
+
+---
+
+### 🔄 场景六：内容管理和互动
+
+#### 获取我的笔记列表
+
+```python
+# MCP 工具调用
+xiaohongshu_get_user_notes(
+    user_id="你的用户ID",
+    page=1
+)
+```
+
+#### 点赞笔记
+
+```python
+# MCP 工具调用
+xiaohongshu_like_note(
+    note_id="笔记ID"
+)
+```
+
+#### 评论笔记
+
+```python
+# MCP 工具调用
+xiaohongshu_comment_note(
+    note_id="笔记ID",
+    content="很棒的分享！"
+)
+```
+
+---
+
+### 📊 场景七：数据分析和优化（即将支持）
+
+```
+[新对话] 请输入消息: 分析我最近发布的10篇笔记，给出优化建议
+
+AI 会：
+1. 获取你最近的笔记数据
+2. 分析阅读量、点赞、评论等数据
+3. 识别热门内容类型和最佳发布时间
+4. 给出内容优化建议
+```
+
+---
+
+### 🛠️ 场景八：自定义 AI 工作流（高级）
+
+如果你想自定义 AI 的工作流程：
+
 ```bash
+# 编辑 AI 调度系统配置
 cd ai_social_scheduler
-uv run python run.py
+# 编辑 config/config.yaml 或 src/ai_social_scheduler/workflows/
 ```
 
-2. 发送 HTTP 请求：
+你可以自定义：
+- 内容生成策略
+- 图片生成风格
+- 发布时机
+- 互动规则
+- 数据分析方式
+
+---
+
+### 💡 使用技巧和最佳实践
+
+#### 技巧 1：优化图片生成效果
+
+在提示词中使用更详细的描述：
+
+```
+❌ 不好的提示词：咖啡
+✅ 好的提示词：一杯冒着热气的手冲咖啡，放在木质桌面上，旁边有咖啡豆和手冲壶，温暖的光线，专业摄影
+```
+
+#### 技巧 2：提高内容质量
+
+让 AI 生成更具体的内容：
+
+```
+❌ 简单请求：写一篇咖啡的小红书
+✅ 详细请求：写一篇手冲咖啡的新手教程，包括器具选择、水温控制、冲泡技巧，语气要轻松有趣，配3张步骤图
+```
+
+#### 技巧 3：避免账号风险
+
+- 不要短时间内发布过多内容（建议每天不超过 5 篇）
+- 适当添加人工互动，不要完全自动化
+- 定期检查账号状态
+- 遵守平台规则，不发布违规内容
+
+#### 技巧 4：保持登录状态
+
+- 登录成功后，Cookie 会自动保存
+- 如果提示登录过期，删除 `xhs-browser-automation-mcp/storage/cookies/` 下的文件，重新登录
+- 不要在多个地方同时登录同一账号
+
+#### 技巧 5：批量操作
+
+使用 AI 调度系统可以轻松实现批量操作：
+
+```
+请创建一周的小红书内容，主题是健康生活，每天一篇，内容要有关联性
+
+AI 会：
+1. 规划一周的内容主题
+2. 生成7篇关联的内容
+3. 为每篇生成合适的配图
+4. 可以选择立即发布或定时发布
+```
+
+---
+
+### 🎯 完整工作流示例
+
+一个完整的使用流程：
+
 ```bash
-curl -X POST http://localhost:8012/api/v1/chat \
-  -H "Content-Type: application/json" \
-  -d '{"message": "帮我写一篇关于美食的小红书"}'
+# 1. 启动所有服务
+python start_xiaohongshu_automation.py
+
+# 2. 启动 AI 聊天客户端
+cd ai_social_scheduler
+uv run python chat.py
+
+# 3. 与 AI 对话
+[新对话] 请输入消息: 我想分享一个关于早起的生活方式内容
+
+📤 AI: 好的！让我帮你创建一篇关于早起的小红书内容。你希望：
+1. 重点分享早起的好处
+2. 分享你的早起习惯
+3. 给出早起的实用技巧
+
+你想要哪个方向？或者我可以综合这些方面来创作。
+
+[对话继续] 请输入消息: 综合这些方面，语气要亲切，配3张清晨阳光的图片
+
+📤 AI: 明白了！我会创作一篇温馨亲切的早起分享，配上3张清晨阳光的图片...
+
+正在生成内容...
+✅ 标题：「早起30天后，我的生活发生了这些变化...」
+✅ 正在生成配图1：清晨第一缕阳光...
+✅ 正在生成配图2：早餐和笔记本...
+✅ 正在生成配图3：伸展的身影...
+✅ 正在发布到小红书...
+
+🎉 发布成功！
+📊 预计阅读量：500+
+🔗 笔记链接：https://www.xiaohongshu.com/...
+
+[对话继续] 请输入消息: 太好了！明天帮我发一篇关于运动的
+
+📤 AI: 好的！我已经安排了明天早上9点发布一篇关于运动的内容...
 ```
 
-**AI 处理流程**：
-当你说"帮我写一篇关于美食的小红书"时，AI 会：
-1. 分析美食主题和需求
-2. 调用 `xhs-content-generator-mcp` 生成内容文案
-3. 调用 `image_video_mcp` 生成配图
-4. 调用 `xhs-browser-automation-mcp` 发布内容
-5. 监控发布结果
-6. 根据数据调整后续策略
-
-### 场景四：完整集成使用
-
-所有项目可以完美集成，形成完整的运营闭环：
-
-1. **AI 调度系统**监听事件（用户请求、定时任务等）
-2. **AI 决策引擎**分析需求，生成执行计划
-3. **内容生成服务**生成文案和图片
-4. **任务调度器**调用 **MCP 服务**执行具体操作
-5. **数据分析**收集结果，优化策略
+这就是完整的使用流程！
 
 ---
 
@@ -662,23 +1144,302 @@ $ curl -X POST http://localhost:8012/api/v1/chat \
 
 ---
 
-## ⚠️ 注意事项
+## ⚠️ 重要注意事项
 
 ### 🔒 账户安全
 
-- 同一账户不要在多个浏览器端同时登录
-- 定期检查登录状态，及时处理 Cookie 过期
-- 建议使用专门的小红书账户进行自动化操作
+#### 登录管理
+- ✅ **首次登录**：服务启动后会自动打开浏览器，手动扫码或密码登录
+- ✅ **保持登录**：登录信息会自动保存，下次启动无需重新登录
+- ❌ **避免冲突**：不要在多个浏览器或设备上同时登录同一账号
+- 🔄 **定期检查**：如果提示登录过期，删除 Cookie 文件重新登录
+- 🛡️ **专用账号**：建议使用专门的账号进行自动化操作，不要用主账号
 
-### 📊 使用限制
+#### Cookie 存储位置
+```
+xhs-browser-automation-mcp/storage/cookies/
+├── default_user.json    # 默认用户的登录信息
+└── other_user.json      # 其他用户的登录信息
+```
 
-- 遵守小红书平台规则和相关法律法规
-- 合理控制发布频率，避免被平台限制
-- 本项目仅供学习和研究使用
+**如何重新登录：**
+```bash
+# Windows
+del xhs-browser-automation-mcp\storage\cookies\*.json
 
-### 🛡️ 风险提示
+# Linux/macOS
+rm xhs-browser-automation-mcp/storage/cookies/*.json
 
-使用本工具产生的任何后果由使用者自行承担。请遵守平台规则，合理使用。
+# 然后重启服务，会自动打开登录页面
+```
+
+---
+
+### 📊 使用限制和风险
+
+#### 发布频率限制（重要！）
+
+为了避免被平台检测和限制，请注意：
+
+| 时间范围 | 建议发布数量 | 风险等级 |
+|---------|-------------|---------|
+| 每小时 | ≤ 2 篇 | ✅ 安全 |
+| 每天 | ≤ 5 篇 | ✅ 安全 |
+| 每天 | 6-10 篇 | ⚠️ 中等风险 |
+| 每天 | > 10 篇 | ❌ 高风险 |
+
+**最佳实践：**
+- 每篇内容发布间隔至少 30 分钟
+- 不要在深夜（0-6点）频繁发布
+- 模拟人工操作，添加适当的随机延迟
+- 定期进行人工互动（点赞、评论、关注）
+
+#### 内容质量要求
+
+小红书对内容质量有严格要求：
+
+❌ **禁止发布**：
+- 违法违规内容
+- 虚假广告和欺诈信息
+- 侵权内容（盗图、抄袭）
+- 低质量和重复内容
+- 诱导互动的内容
+
+✅ **推荐发布**：
+- 原创优质内容
+- 真实的使用体验
+- 有价值的知识分享
+- 精美的图片和排版
+
+#### 账号风险等级
+
+| 行为 | 风险等级 | 可能后果 |
+|------|---------|---------|
+| 合理使用，遵守规则 | ✅ 低风险 | 正常运营 |
+| 发布频率过高 | ⚠️ 中风险 | 限流、降权 |
+| 发布低质量内容 | ⚠️ 中风险 | 内容不推荐 |
+| 违规内容 | ❌ 高风险 | 删除内容、封禁账号 |
+| 恶意操作 | ❌ 高风险 | 永久封禁 |
+
+---
+
+### 🛡️ 法律和道德声明
+
+#### 使用声明
+
+本项目仅供**学习和研究**使用，使用者需要：
+
+1. **遵守法律法规**：
+   - 遵守《中华人民共和国网络安全法》
+   - 遵守《互联网信息服务管理办法》
+   - 遵守相关数据保护和隐私法规
+
+2. **遵守平台规则**：
+   - 遵守小红书平台用户协议
+   - 遵守小红书社区公约
+   - 不进行恶意操作和违规行为
+
+3. **承担责任**：
+   - 使用本工具产生的任何后果由使用者自行承担
+   - 因违规使用导致的账号封禁、法律责任等，与本项目无关
+
+#### 禁止行为
+
+**严禁使用本工具进行以下行为：**
+
+❌ 批量注册账号和恶意营销  
+❌ 发布虚假信息和诈骗内容  
+❌ 侵犯他人知识产权和隐私  
+❌ 进行网络攻击和恶意操作  
+❌ 其他违法违规行为  
+
+#### 免责声明
+
+- 本项目代码开源，仅供技术学习和研究
+- 项目作者不对使用者的任何违规行为负责
+- 使用本项目即表示同意上述声明
+
+---
+
+### 🔧 故障排除指南
+
+#### 问题 1：服务启动失败
+
+**症状**：运行启动命令后，服务无法启动或立即退出
+
+**可能原因**：
+- Python 版本不符合要求（< 3.11）
+- 依赖包未正确安装
+- 端口被占用
+- 配置文件错误
+
+**解决方法**：
+
+```bash
+# 1. 检查 Python 版本
+python --version  # 应该是 3.11 或更高
+
+# 2. 重新安装依赖
+cd <project_directory>
+uv sync
+
+# 3. 检查端口占用（Windows）
+netstat -ano | findstr "8000"
+netstat -ano | findstr "8003"
+
+# 结束占用的进程
+taskkill /PID <进程ID> /F
+
+# 4. 检查配置文件
+# 确保 .env 文件存在且配置正确
+```
+
+#### 问题 2：图片生成失败
+
+**症状**：图片生成时报错或生成的图片质量很差
+
+**可能原因**：
+- API Key 无效或余额不足
+- 提示词不符合要求
+- 网络连接问题
+
+**解决方法**：
+
+```bash
+# 1. 验证 API Key
+# 登录 https://dashscope.aliyun.com/
+# 检查 API Key 状态和余额
+
+# 2. 检查 .env 配置
+cd image_video_mcp
+cat .env  # Linux/macOS
+type .env  # Windows
+
+# 确保包含正确的配置
+WANT2I_API_KEY=sk-your-key-here
+
+# 3. 测试图片生成
+python free_image_gen.py
+
+# 4. 优化提示词
+# 使用更详细和具体的描述
+```
+
+#### 问题 3：浏览器无法启动
+
+**症状**：浏览器自动化服务启动后，浏览器无法打开或立即崩溃
+
+**可能原因**：
+- Playwright 浏览器未正确安装
+- 系统缺少必要的依赖
+- 防火墙或安全软件阻止
+
+**解决方法**：
+
+```bash
+# 1. 重新安装 Playwright 浏览器
+cd xhs-browser-automation-mcp
+uv run playwright install chromium --with-deps
+
+# 2. 检查浏览器是否安装成功
+uv run playwright install --help
+
+# 3. Windows 用户可能需要安装 Visual C++ 运行库
+# 下载地址：https://aka.ms/vs/17/release/vc_redist.x64.exe
+
+# 4. Linux 用户可能需要安装系统依赖
+sudo apt-get install -y \
+    libnss3 libatk1.0-0 libatk-bridge2.0-0 \
+    libcups2 libxcomposite1 libxdamage1
+```
+
+#### 问题 4：发布内容失败
+
+**症状**：内容生成成功，但发布到小红书时失败
+
+**可能原因**：
+- 未登录或登录过期
+- 图片格式或大小不符合要求
+- 内容包含敏感词
+- 网络连接问题
+
+**解决方法**：
+
+```bash
+# 1. 检查登录状态
+# 重新启动浏览器自动化服务，检查是否需要登录
+
+# 2. 检查图片
+# 确保图片格式为 JPG/PNG，大小不超过 10MB
+
+# 3. 检查内容
+# 避免使用敏感词，检查内容是否符合平台规则
+
+# 4. 重新登录
+# 删除 Cookie 文件，重新登录
+del xhs-browser-automation-mcp\storage\cookies\*.json
+```
+
+#### 问题 5：AI 响应缓慢或无响应
+
+**症状**：发送消息后，AI 长时间无响应或响应很慢
+
+**可能原因**：
+- 后台服务未启动
+- 网络连接问题
+- 生成图片时间较长
+- 系统资源不足
+
+**解决方法**：
+
+```bash
+# 1. 检查服务状态
+# 确保所有必需的服务都已启动
+python start_xiaohongshu_automation.py
+
+# 2. 查看服务日志
+# 检查各个服务的终端输出，查找错误信息
+
+# 3. 耐心等待
+# 图片生成可能需要 10-30 秒
+# 完整流程可能需要 1-2 分钟
+
+# 4. 检查系统资源
+# 确保系统有足够的内存和 CPU
+```
+
+---
+
+### 📞 获取帮助
+
+如果遇到问题无法解决：
+
+1. **查看文档**：仔细阅读本 README 和各子项目的 README
+2. **查看日志**：检查终端输出的错误信息
+3. **搜索 Issues**：在 GitHub 上搜索类似问题
+4. **提交 Issue**：如果是新问题，提交详细的问题报告
+
+**提交 Issue 时请包含**：
+- 操作系统和版本
+- Python 版本
+- 完整的错误信息
+- 复现步骤
+- 相关配置（隐藏敏感信息）
+
+---
+
+### ✅ 安全使用检查清单
+
+在开始使用前，请确认：
+
+- [ ] 我已阅读并理解所有注意事项
+- [ ] 我已配置正确的 API Key
+- [ ] 我使用的是专门的测试账号
+- [ ] 我了解发布频率限制
+- [ ] 我承诺遵守平台规则和法律法规
+- [ ] 我知道如何处理常见问题
+- [ ] 我已备份重要数据（如有）
+- [ ] 我理解使用本工具的风险和责任
 
 ---
 
