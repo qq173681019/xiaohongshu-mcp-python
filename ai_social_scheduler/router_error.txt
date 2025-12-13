@@ -1,0 +1,1064 @@
+
+============================================================
+时间: 2025-12-09 00:30:06.193794
+错误: Error code: 400 - {'error': {'message': 'Model Not Exist', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_request_error'}}
+Traceback:
+Traceback (most recent call last):
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\src\ai_social_scheduler\agents\router.py", line 228, in _execute
+    response = await self.structured_llm.ainvoke(messages_with_system)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 405, in ainvoke
+    llm_result = await self.agenerate_prompt(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1112, in agenerate_prompt
+    return await self.agenerate(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1070, in agenerate
+    raise exceptions[0]
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1323, in _agenerate_with_cache
+    result = await self._agenerate(
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_openai\chat_models\base.py", line 1546, in _agenerate
+    raise e
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_openai\chat_models\base.py", line 1539, in _agenerate
+    raw_response = await self.async_client.with_raw_response.create(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\openai\_legacy_response.py", line 381, in wrapped
+    return cast(LegacyAPIResponse[R], await func(*args, **kwargs))
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\openai\resources\chat\completions\completions.py", line 2672, in create
+    return await self._post(
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\openai\_base_client.py", line 1794, in post
+    return await self.request(cast_to, opts, stream=stream, stream_cls=stream_cls)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\openai\_base_client.py", line 1594, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.BadRequestError: Error code: 400 - {'error': {'message': 'Model Not Exist', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_request_error'}}
+
+
+============================================================
+时间: 2025-12-09 00:32:55.780967
+错误: Error code: 400 - {'error': {'message': 'Model Not Exist', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_request_error'}}
+Traceback:
+Traceback (most recent call last):
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\src\ai_social_scheduler\agents\router.py", line 228, in _execute
+    response = await self.structured_llm.ainvoke(messages_with_system)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 405, in ainvoke
+    llm_result = await self.agenerate_prompt(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1112, in agenerate_prompt
+    return await self.agenerate(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1070, in agenerate
+    raise exceptions[0]
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1323, in _agenerate_with_cache
+    result = await self._agenerate(
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_openai\chat_models\base.py", line 1546, in _agenerate
+    raise e
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_openai\chat_models\base.py", line 1539, in _agenerate
+    raw_response = await self.async_client.with_raw_response.create(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\openai\_legacy_response.py", line 381, in wrapped
+    return cast(LegacyAPIResponse[R], await func(*args, **kwargs))
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\openai\resources\chat\completions\completions.py", line 2672, in create
+    return await self._post(
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\openai\_base_client.py", line 1794, in post
+    return await self.request(cast_to, opts, stream=stream, stream_cls=stream_cls)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\openai\_base_client.py", line 1594, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.BadRequestError: Error code: 400 - {'error': {'message': 'Model Not Exist', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_request_error'}}
+
+
+============================================================
+时间: 2025-12-09 00:32:55.847106
+错误: Error code: 400 - {'error': {'message': 'Model Not Exist', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_request_error'}}
+Traceback:
+Traceback (most recent call last):
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\src\ai_social_scheduler\agents\router.py", line 228, in _execute
+    response = await self.structured_llm.ainvoke(messages_with_system)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 405, in ainvoke
+    llm_result = await self.agenerate_prompt(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1112, in agenerate_prompt
+    return await self.agenerate(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1070, in agenerate
+    raise exceptions[0]
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1323, in _agenerate_with_cache
+    result = await self._agenerate(
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_openai\chat_models\base.py", line 1546, in _agenerate
+    raise e
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_openai\chat_models\base.py", line 1539, in _agenerate
+    raw_response = await self.async_client.with_raw_response.create(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\openai\_legacy_response.py", line 381, in wrapped
+    return cast(LegacyAPIResponse[R], await func(*args, **kwargs))
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\openai\resources\chat\completions\completions.py", line 2672, in create
+    return await self._post(
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\openai\_base_client.py", line 1794, in post
+    return await self.request(cast_to, opts, stream=stream, stream_cls=stream_cls)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\openai\_base_client.py", line 1594, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.BadRequestError: Error code: 400 - {'error': {'message': 'Model Not Exist', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_request_error'}}
+
+
+============================================================
+时间: 2025-12-09 00:59:22.504917
+错误: Error code: 400 - {'error': {'message': 'Model Not Exist', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_request_error'}}
+Traceback:
+Traceback (most recent call last):
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\src\ai_social_scheduler\agents\router.py", line 228, in _execute
+    response = await self.structured_llm.ainvoke(messages_with_system)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 405, in ainvoke
+    llm_result = await self.agenerate_prompt(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1112, in agenerate_prompt
+    return await self.agenerate(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1070, in agenerate
+    raise exceptions[0]
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1323, in _agenerate_with_cache
+    result = await self._agenerate(
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_openai\chat_models\base.py", line 1546, in _agenerate
+    raise e
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_openai\chat_models\base.py", line 1539, in _agenerate
+    raw_response = await self.async_client.with_raw_response.create(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\openai\_legacy_response.py", line 381, in wrapped
+    return cast(LegacyAPIResponse[R], await func(*args, **kwargs))
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\openai\resources\chat\completions\completions.py", line 2672, in create
+    return await self._post(
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\openai\_base_client.py", line 1794, in post
+    return await self.request(cast_to, opts, stream=stream, stream_cls=stream_cls)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\openai\_base_client.py", line 1594, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.BadRequestError: Error code: 400 - {'error': {'message': 'Model Not Exist', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_request_error'}}
+
+
+============================================================
+时间: 2025-12-09 01:12:08.783924
+错误: Error code: 400 - {'error': {'message': 'Model Not Exist', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_request_error'}}
+Traceback:
+Traceback (most recent call last):
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\src\ai_social_scheduler\agents\router.py", line 228, in _execute
+    response = await self.structured_llm.ainvoke(messages_with_system)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 405, in ainvoke
+    llm_result = await self.agenerate_prompt(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1112, in agenerate_prompt
+    return await self.agenerate(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1070, in agenerate
+    raise exceptions[0]
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1323, in _agenerate_with_cache
+    result = await self._agenerate(
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_openai\chat_models\base.py", line 1546, in _agenerate
+    raise e
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_openai\chat_models\base.py", line 1539, in _agenerate
+    raw_response = await self.async_client.with_raw_response.create(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\openai\_legacy_response.py", line 381, in wrapped
+    return cast(LegacyAPIResponse[R], await func(*args, **kwargs))
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\openai\resources\chat\completions\completions.py", line 2672, in create
+    return await self._post(
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\openai\_base_client.py", line 1794, in post
+    return await self.request(cast_to, opts, stream=stream, stream_cls=stream_cls)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\openai\_base_client.py", line 1594, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.BadRequestError: Error code: 400 - {'error': {'message': 'Model Not Exist', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_request_error'}}
+
+
+============================================================
+时间: 2025-12-09 01:33:37.963557
+错误: Error code: 400 - {'error': {'message': 'Model Not Exist', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_request_error'}}
+Traceback:
+Traceback (most recent call last):
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\src\ai_social_scheduler\agents\router.py", line 228, in _execute
+    response = await self.structured_llm.ainvoke(messages_with_system)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 405, in ainvoke
+    llm_result = await self.agenerate_prompt(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1112, in agenerate_prompt
+    return await self.agenerate(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1070, in agenerate
+    raise exceptions[0]
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1323, in _agenerate_with_cache
+    result = await self._agenerate(
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_openai\chat_models\base.py", line 1546, in _agenerate
+    raise e
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_openai\chat_models\base.py", line 1539, in _agenerate
+    raw_response = await self.async_client.with_raw_response.create(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\openai\_legacy_response.py", line 381, in wrapped
+    return cast(LegacyAPIResponse[R], await func(*args, **kwargs))
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\openai\resources\chat\completions\completions.py", line 2672, in create
+    return await self._post(
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\openai\_base_client.py", line 1794, in post
+    return await self.request(cast_to, opts, stream=stream, stream_cls=stream_cls)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\openai\_base_client.py", line 1594, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.BadRequestError: Error code: 400 - {'error': {'message': 'Model Not Exist', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_request_error'}}
+
+
+============================================================
+时间: 2025-12-10 23:42:46.656191
+错误: Error code: 400 - {'error': {'message': 'Model Not Exist', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_request_error'}}
+Traceback:
+Traceback (most recent call last):
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\src\ai_social_scheduler\agents\router.py", line 228, in _execute
+    response = await self.structured_llm.ainvoke(messages_with_system)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 405, in ainvoke
+    llm_result = await self.agenerate_prompt(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1112, in agenerate_prompt
+    return await self.agenerate(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1070, in agenerate
+    raise exceptions[0]
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1323, in _agenerate_with_cache
+    result = await self._agenerate(
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_openai\chat_models\base.py", line 1546, in _agenerate
+    raise e
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_openai\chat_models\base.py", line 1539, in _agenerate
+    raw_response = await self.async_client.with_raw_response.create(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\openai\_legacy_response.py", line 381, in wrapped
+    return cast(LegacyAPIResponse[R], await func(*args, **kwargs))
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\openai\resources\chat\completions\completions.py", line 2672, in create
+    return await self._post(
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\openai\_base_client.py", line 1794, in post
+    return await self.request(cast_to, opts, stream=stream, stream_cls=stream_cls)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\openai\_base_client.py", line 1594, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.BadRequestError: Error code: 400 - {'error': {'message': 'Model Not Exist', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_request_error'}}
+
+
+============================================================
+时间: 2025-12-13 00:49:06.197150
+错误: Error code: 401 - {'error': {'message': 'Authentication Fails, Your api key: ****f250 is invalid', 'type': 'authentication_error', 'param': None, 'code': 'invalid_request_error'}}
+Traceback:
+Traceback (most recent call last):
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\src\ai_social_scheduler\agents\router.py", line 228, in _execute
+    response = await self.structured_llm.ainvoke(messages_with_system)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 405, in ainvoke
+    llm_result = await self.agenerate_prompt(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1112, in agenerate_prompt
+    return await self.agenerate(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1070, in agenerate
+    raise exceptions[0]
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1323, in _agenerate_with_cache
+    result = await self._agenerate(
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_openai\chat_models\base.py", line 1546, in _agenerate
+    raise e
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_openai\chat_models\base.py", line 1539, in _agenerate
+    raw_response = await self.async_client.with_raw_response.create(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\openai\_legacy_response.py", line 381, in wrapped
+    return cast(LegacyAPIResponse[R], await func(*args, **kwargs))
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\openai\resources\chat\completions\completions.py", line 2672, in create
+    return await self._post(
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\openai\_base_client.py", line 1794, in post
+    return await self.request(cast_to, opts, stream=stream, stream_cls=stream_cls)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\openai\_base_client.py", line 1594, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.AuthenticationError: Error code: 401 - {'error': {'message': 'Authentication Fails, Your api key: ****f250 is invalid', 'type': 'authentication_error', 'param': None, 'code': 'invalid_request_error'}}
+
+
+============================================================
+时间: 2025-12-13 00:49:10.319637
+错误: Error code: 401 - {'error': {'message': 'Authentication Fails, Your api key: ****f250 is invalid', 'type': 'authentication_error', 'param': None, 'code': 'invalid_request_error'}}
+Traceback:
+Traceback (most recent call last):
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\src\ai_social_scheduler\agents\router.py", line 228, in _execute
+    response = await self.structured_llm.ainvoke(messages_with_system)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 405, in ainvoke
+    llm_result = await self.agenerate_prompt(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1112, in agenerate_prompt
+    return await self.agenerate(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1070, in agenerate
+    raise exceptions[0]
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1323, in _agenerate_with_cache
+    result = await self._agenerate(
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_openai\chat_models\base.py", line 1546, in _agenerate
+    raise e
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_openai\chat_models\base.py", line 1539, in _agenerate
+    raw_response = await self.async_client.with_raw_response.create(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\openai\_legacy_response.py", line 381, in wrapped
+    return cast(LegacyAPIResponse[R], await func(*args, **kwargs))
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\openai\resources\chat\completions\completions.py", line 2672, in create
+    return await self._post(
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\openai\_base_client.py", line 1794, in post
+    return await self.request(cast_to, opts, stream=stream, stream_cls=stream_cls)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\openai\_base_client.py", line 1594, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.AuthenticationError: Error code: 401 - {'error': {'message': 'Authentication Fails, Your api key: ****f250 is invalid', 'type': 'authentication_error', 'param': None, 'code': 'invalid_request_error'}}
+
+
+============================================================
+时间: 2025-12-13 00:49:14.438555
+错误: Error code: 401 - {'error': {'message': 'Authentication Fails, Your api key: ****f250 is invalid', 'type': 'authentication_error', 'param': None, 'code': 'invalid_request_error'}}
+Traceback:
+Traceback (most recent call last):
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\src\ai_social_scheduler\agents\router.py", line 228, in _execute
+    response = await self.structured_llm.ainvoke(messages_with_system)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 405, in ainvoke
+    llm_result = await self.agenerate_prompt(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1112, in agenerate_prompt
+    return await self.agenerate(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1070, in agenerate
+    raise exceptions[0]
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1323, in _agenerate_with_cache
+    result = await self._agenerate(
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_openai\chat_models\base.py", line 1546, in _agenerate
+    raise e
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_openai\chat_models\base.py", line 1539, in _agenerate
+    raw_response = await self.async_client.with_raw_response.create(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\openai\_legacy_response.py", line 381, in wrapped
+    return cast(LegacyAPIResponse[R], await func(*args, **kwargs))
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\openai\resources\chat\completions\completions.py", line 2672, in create
+    return await self._post(
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\openai\_base_client.py", line 1794, in post
+    return await self.request(cast_to, opts, stream=stream, stream_cls=stream_cls)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\openai\_base_client.py", line 1594, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.AuthenticationError: Error code: 401 - {'error': {'message': 'Authentication Fails, Your api key: ****f250 is invalid', 'type': 'authentication_error', 'param': None, 'code': 'invalid_request_error'}}
+
+
+============================================================
+时间: 2025-12-13 00:52:26.867824
+错误: Error code: 401 - {'error': {'message': 'Authentication Fails, Your api key: ****f250 is invalid', 'type': 'authentication_error', 'param': None, 'code': 'invalid_request_error'}}
+Traceback:
+Traceback (most recent call last):
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\src\ai_social_scheduler\agents\router.py", line 228, in _execute
+    response = await self.structured_llm.ainvoke(messages_with_system)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 405, in ainvoke
+    llm_result = await self.agenerate_prompt(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1112, in agenerate_prompt
+    return await self.agenerate(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1070, in agenerate
+    raise exceptions[0]
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1323, in _agenerate_with_cache
+    result = await self._agenerate(
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_openai\chat_models\base.py", line 1546, in _agenerate
+    raise e
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_openai\chat_models\base.py", line 1539, in _agenerate
+    raw_response = await self.async_client.with_raw_response.create(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\openai\_legacy_response.py", line 381, in wrapped
+    return cast(LegacyAPIResponse[R], await func(*args, **kwargs))
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\openai\resources\chat\completions\completions.py", line 2672, in create
+    return await self._post(
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\openai\_base_client.py", line 1794, in post
+    return await self.request(cast_to, opts, stream=stream, stream_cls=stream_cls)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\openai\_base_client.py", line 1594, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.AuthenticationError: Error code: 401 - {'error': {'message': 'Authentication Fails, Your api key: ****f250 is invalid', 'type': 'authentication_error', 'param': None, 'code': 'invalid_request_error'}}
+
+
+============================================================
+时间: 2025-12-13 00:52:31.005597
+错误: Error code: 401 - {'error': {'message': 'Authentication Fails, Your api key: ****f250 is invalid', 'type': 'authentication_error', 'param': None, 'code': 'invalid_request_error'}}
+Traceback:
+Traceback (most recent call last):
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\src\ai_social_scheduler\agents\router.py", line 228, in _execute
+    response = await self.structured_llm.ainvoke(messages_with_system)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 405, in ainvoke
+    llm_result = await self.agenerate_prompt(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1112, in agenerate_prompt
+    return await self.agenerate(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1070, in agenerate
+    raise exceptions[0]
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1323, in _agenerate_with_cache
+    result = await self._agenerate(
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_openai\chat_models\base.py", line 1546, in _agenerate
+    raise e
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_openai\chat_models\base.py", line 1539, in _agenerate
+    raw_response = await self.async_client.with_raw_response.create(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\openai\_legacy_response.py", line 381, in wrapped
+    return cast(LegacyAPIResponse[R], await func(*args, **kwargs))
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\openai\resources\chat\completions\completions.py", line 2672, in create
+    return await self._post(
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\openai\_base_client.py", line 1794, in post
+    return await self.request(cast_to, opts, stream=stream, stream_cls=stream_cls)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\openai\_base_client.py", line 1594, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.AuthenticationError: Error code: 401 - {'error': {'message': 'Authentication Fails, Your api key: ****f250 is invalid', 'type': 'authentication_error', 'param': None, 'code': 'invalid_request_error'}}
+
+
+============================================================
+时间: 2025-12-13 00:52:35.135634
+错误: Error code: 401 - {'error': {'message': 'Authentication Fails, Your api key: ****f250 is invalid', 'type': 'authentication_error', 'param': None, 'code': 'invalid_request_error'}}
+Traceback:
+Traceback (most recent call last):
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\src\ai_social_scheduler\agents\router.py", line 228, in _execute
+    response = await self.structured_llm.ainvoke(messages_with_system)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 405, in ainvoke
+    llm_result = await self.agenerate_prompt(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1112, in agenerate_prompt
+    return await self.agenerate(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1070, in agenerate
+    raise exceptions[0]
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1323, in _agenerate_with_cache
+    result = await self._agenerate(
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_openai\chat_models\base.py", line 1546, in _agenerate
+    raise e
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_openai\chat_models\base.py", line 1539, in _agenerate
+    raw_response = await self.async_client.with_raw_response.create(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\openai\_legacy_response.py", line 381, in wrapped
+    return cast(LegacyAPIResponse[R], await func(*args, **kwargs))
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\openai\resources\chat\completions\completions.py", line 2672, in create
+    return await self._post(
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\openai\_base_client.py", line 1794, in post
+    return await self.request(cast_to, opts, stream=stream, stream_cls=stream_cls)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\openai\_base_client.py", line 1594, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.AuthenticationError: Error code: 401 - {'error': {'message': 'Authentication Fails, Your api key: ****f250 is invalid', 'type': 'authentication_error', 'param': None, 'code': 'invalid_request_error'}}
+
+
+============================================================
+时间: 2025-12-13 00:53:33.147203
+错误: Error code: 401 - {'error': {'message': 'Authentication Fails, Your api key: ****f250 is invalid', 'type': 'authentication_error', 'param': None, 'code': 'invalid_request_error'}}
+Traceback:
+Traceback (most recent call last):
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\src\ai_social_scheduler\agents\router.py", line 228, in _execute
+    response = await self.structured_llm.ainvoke(messages_with_system)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 405, in ainvoke
+    llm_result = await self.agenerate_prompt(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1112, in agenerate_prompt
+    return await self.agenerate(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1070, in agenerate
+    raise exceptions[0]
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1323, in _agenerate_with_cache
+    result = await self._agenerate(
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_openai\chat_models\base.py", line 1546, in _agenerate
+    raise e
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_openai\chat_models\base.py", line 1539, in _agenerate
+    raw_response = await self.async_client.with_raw_response.create(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\openai\_legacy_response.py", line 381, in wrapped
+    return cast(LegacyAPIResponse[R], await func(*args, **kwargs))
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\openai\resources\chat\completions\completions.py", line 2672, in create
+    return await self._post(
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\openai\_base_client.py", line 1794, in post
+    return await self.request(cast_to, opts, stream=stream, stream_cls=stream_cls)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\openai\_base_client.py", line 1594, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.AuthenticationError: Error code: 401 - {'error': {'message': 'Authentication Fails, Your api key: ****f250 is invalid', 'type': 'authentication_error', 'param': None, 'code': 'invalid_request_error'}}
+
+
+============================================================
+时间: 2025-12-13 00:53:37.247691
+错误: Error code: 401 - {'error': {'message': 'Authentication Fails, Your api key: ****f250 is invalid', 'type': 'authentication_error', 'param': None, 'code': 'invalid_request_error'}}
+Traceback:
+Traceback (most recent call last):
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\src\ai_social_scheduler\agents\router.py", line 228, in _execute
+    response = await self.structured_llm.ainvoke(messages_with_system)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 405, in ainvoke
+    llm_result = await self.agenerate_prompt(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1112, in agenerate_prompt
+    return await self.agenerate(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1070, in agenerate
+    raise exceptions[0]
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1323, in _agenerate_with_cache
+    result = await self._agenerate(
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_openai\chat_models\base.py", line 1546, in _agenerate
+    raise e
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_openai\chat_models\base.py", line 1539, in _agenerate
+    raw_response = await self.async_client.with_raw_response.create(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\openai\_legacy_response.py", line 381, in wrapped
+    return cast(LegacyAPIResponse[R], await func(*args, **kwargs))
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\openai\resources\chat\completions\completions.py", line 2672, in create
+    return await self._post(
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\openai\_base_client.py", line 1794, in post
+    return await self.request(cast_to, opts, stream=stream, stream_cls=stream_cls)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\openai\_base_client.py", line 1594, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.AuthenticationError: Error code: 401 - {'error': {'message': 'Authentication Fails, Your api key: ****f250 is invalid', 'type': 'authentication_error', 'param': None, 'code': 'invalid_request_error'}}
+
+
+============================================================
+时间: 2025-12-13 00:53:41.374408
+错误: Error code: 401 - {'error': {'message': 'Authentication Fails, Your api key: ****f250 is invalid', 'type': 'authentication_error', 'param': None, 'code': 'invalid_request_error'}}
+Traceback:
+Traceback (most recent call last):
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\src\ai_social_scheduler\agents\router.py", line 228, in _execute
+    response = await self.structured_llm.ainvoke(messages_with_system)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 405, in ainvoke
+    llm_result = await self.agenerate_prompt(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1112, in agenerate_prompt
+    return await self.agenerate(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1070, in agenerate
+    raise exceptions[0]
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1323, in _agenerate_with_cache
+    result = await self._agenerate(
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_openai\chat_models\base.py", line 1546, in _agenerate
+    raise e
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_openai\chat_models\base.py", line 1539, in _agenerate
+    raw_response = await self.async_client.with_raw_response.create(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\openai\_legacy_response.py", line 381, in wrapped
+    return cast(LegacyAPIResponse[R], await func(*args, **kwargs))
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\openai\resources\chat\completions\completions.py", line 2672, in create
+    return await self._post(
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\openai\_base_client.py", line 1794, in post
+    return await self.request(cast_to, opts, stream=stream, stream_cls=stream_cls)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\openai\_base_client.py", line 1594, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.AuthenticationError: Error code: 401 - {'error': {'message': 'Authentication Fails, Your api key: ****f250 is invalid', 'type': 'authentication_error', 'param': None, 'code': 'invalid_request_error'}}
+
+
+============================================================
+时间: 2025-12-13 03:07:12.200125
+错误: Error code: 401 - {'error': {'message': 'Authentication Fails, Your api key: ****f250 is invalid', 'type': 'authentication_error', 'param': None, 'code': 'invalid_request_error'}}
+Traceback:
+Traceback (most recent call last):
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\src\ai_social_scheduler\agents\router.py", line 228, in _execute
+    response = await self.structured_llm.ainvoke(messages_with_system)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 405, in ainvoke
+    llm_result = await self.agenerate_prompt(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1112, in agenerate_prompt
+    return await self.agenerate(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1070, in agenerate
+    raise exceptions[0]
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1323, in _agenerate_with_cache
+    result = await self._agenerate(
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_openai\chat_models\base.py", line 1546, in _agenerate
+    raise e
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_openai\chat_models\base.py", line 1539, in _agenerate
+    raw_response = await self.async_client.with_raw_response.create(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\openai\_legacy_response.py", line 381, in wrapped
+    return cast(LegacyAPIResponse[R], await func(*args, **kwargs))
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\openai\resources\chat\completions\completions.py", line 2672, in create
+    return await self._post(
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\openai\_base_client.py", line 1794, in post
+    return await self.request(cast_to, opts, stream=stream, stream_cls=stream_cls)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\openai\_base_client.py", line 1594, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.AuthenticationError: Error code: 401 - {'error': {'message': 'Authentication Fails, Your api key: ****f250 is invalid', 'type': 'authentication_error', 'param': None, 'code': 'invalid_request_error'}}
+
+
+============================================================
+时间: 2025-12-13 03:07:16.324547
+错误: Error code: 401 - {'error': {'message': 'Authentication Fails, Your api key: ****f250 is invalid', 'type': 'authentication_error', 'param': None, 'code': 'invalid_request_error'}}
+Traceback:
+Traceback (most recent call last):
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\src\ai_social_scheduler\agents\router.py", line 228, in _execute
+    response = await self.structured_llm.ainvoke(messages_with_system)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 405, in ainvoke
+    llm_result = await self.agenerate_prompt(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1112, in agenerate_prompt
+    return await self.agenerate(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1070, in agenerate
+    raise exceptions[0]
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1323, in _agenerate_with_cache
+    result = await self._agenerate(
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_openai\chat_models\base.py", line 1546, in _agenerate
+    raise e
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_openai\chat_models\base.py", line 1539, in _agenerate
+    raw_response = await self.async_client.with_raw_response.create(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\openai\_legacy_response.py", line 381, in wrapped
+    return cast(LegacyAPIResponse[R], await func(*args, **kwargs))
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\openai\resources\chat\completions\completions.py", line 2672, in create
+    return await self._post(
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\openai\_base_client.py", line 1794, in post
+    return await self.request(cast_to, opts, stream=stream, stream_cls=stream_cls)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\openai\_base_client.py", line 1594, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.AuthenticationError: Error code: 401 - {'error': {'message': 'Authentication Fails, Your api key: ****f250 is invalid', 'type': 'authentication_error', 'param': None, 'code': 'invalid_request_error'}}
+
+
+============================================================
+时间: 2025-12-13 03:07:20.446248
+错误: Error code: 401 - {'error': {'message': 'Authentication Fails, Your api key: ****f250 is invalid', 'type': 'authentication_error', 'param': None, 'code': 'invalid_request_error'}}
+Traceback:
+Traceback (most recent call last):
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\src\ai_social_scheduler\agents\router.py", line 228, in _execute
+    response = await self.structured_llm.ainvoke(messages_with_system)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 405, in ainvoke
+    llm_result = await self.agenerate_prompt(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1112, in agenerate_prompt
+    return await self.agenerate(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1070, in agenerate
+    raise exceptions[0]
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1323, in _agenerate_with_cache
+    result = await self._agenerate(
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_openai\chat_models\base.py", line 1546, in _agenerate
+    raise e
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_openai\chat_models\base.py", line 1539, in _agenerate
+    raw_response = await self.async_client.with_raw_response.create(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\openai\_legacy_response.py", line 381, in wrapped
+    return cast(LegacyAPIResponse[R], await func(*args, **kwargs))
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\openai\resources\chat\completions\completions.py", line 2672, in create
+    return await self._post(
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\openai\_base_client.py", line 1794, in post
+    return await self.request(cast_to, opts, stream=stream, stream_cls=stream_cls)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\openai\_base_client.py", line 1594, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.AuthenticationError: Error code: 401 - {'error': {'message': 'Authentication Fails, Your api key: ****f250 is invalid', 'type': 'authentication_error', 'param': None, 'code': 'invalid_request_error'}}
+
+
+============================================================
+时间: 2025-12-13 03:19:40.490123
+错误: Error code: 403 - {'error': {'message': 'Access to model denied. Please make sure you are eligible for using the model.', 'type': 'AccessDenied.Unpurchased', 'param': None, 'code': 'AccessDenied.Unpurchased'}, 'id': 'chatcmpl-408eb69d-4097-4415-b1db-f195e4654ba0', 'request_id': '408eb69d-4097-4415-b1db-f195e4654ba0'}
+Traceback:
+Traceback (most recent call last):
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\src\ai_social_scheduler\agents\router.py", line 228, in _execute
+    response = await self.structured_llm.ainvoke(messages_with_system)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 405, in ainvoke
+    llm_result = await self.agenerate_prompt(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1112, in agenerate_prompt
+    return await self.agenerate(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1070, in agenerate
+    raise exceptions[0]
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1323, in _agenerate_with_cache
+    result = await self._agenerate(
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_openai\chat_models\base.py", line 1546, in _agenerate
+    raise e
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_openai\chat_models\base.py", line 1539, in _agenerate
+    raw_response = await self.async_client.with_raw_response.create(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\openai\_legacy_response.py", line 381, in wrapped
+    return cast(LegacyAPIResponse[R], await func(*args, **kwargs))
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\openai\resources\chat\completions\completions.py", line 2672, in create
+    return await self._post(
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\openai\_base_client.py", line 1794, in post
+    return await self.request(cast_to, opts, stream=stream, stream_cls=stream_cls)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\openai\_base_client.py", line 1594, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.PermissionDeniedError: Error code: 403 - {'error': {'message': 'Access to model denied. Please make sure you are eligible for using the model.', 'type': 'AccessDenied.Unpurchased', 'param': None, 'code': 'AccessDenied.Unpurchased'}, 'id': 'chatcmpl-408eb69d-4097-4415-b1db-f195e4654ba0', 'request_id': '408eb69d-4097-4415-b1db-f195e4654ba0'}
+
+
+============================================================
+时间: 2025-12-13 03:19:44.633591
+错误: Error code: 403 - {'error': {'message': 'Access to model denied. Please make sure you are eligible for using the model.', 'type': 'AccessDenied.Unpurchased', 'param': None, 'code': 'AccessDenied.Unpurchased'}, 'id': 'chatcmpl-9ed33131-3f7d-415f-bf09-b11c899276ec', 'request_id': '9ed33131-3f7d-415f-bf09-b11c899276ec'}
+Traceback:
+Traceback (most recent call last):
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\src\ai_social_scheduler\agents\router.py", line 228, in _execute
+    response = await self.structured_llm.ainvoke(messages_with_system)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 405, in ainvoke
+    llm_result = await self.agenerate_prompt(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1112, in agenerate_prompt
+    return await self.agenerate(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1070, in agenerate
+    raise exceptions[0]
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1323, in _agenerate_with_cache
+    result = await self._agenerate(
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_openai\chat_models\base.py", line 1546, in _agenerate
+    raise e
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_openai\chat_models\base.py", line 1539, in _agenerate
+    raw_response = await self.async_client.with_raw_response.create(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\openai\_legacy_response.py", line 381, in wrapped
+    return cast(LegacyAPIResponse[R], await func(*args, **kwargs))
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\openai\resources\chat\completions\completions.py", line 2672, in create
+    return await self._post(
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\openai\_base_client.py", line 1794, in post
+    return await self.request(cast_to, opts, stream=stream, stream_cls=stream_cls)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\openai\_base_client.py", line 1594, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.PermissionDeniedError: Error code: 403 - {'error': {'message': 'Access to model denied. Please make sure you are eligible for using the model.', 'type': 'AccessDenied.Unpurchased', 'param': None, 'code': 'AccessDenied.Unpurchased'}, 'id': 'chatcmpl-9ed33131-3f7d-415f-bf09-b11c899276ec', 'request_id': '9ed33131-3f7d-415f-bf09-b11c899276ec'}
+
+
+============================================================
+时间: 2025-12-13 03:19:49.250812
+错误: Error code: 403 - {'error': {'message': 'Access to model denied. Please make sure you are eligible for using the model.', 'type': 'AccessDenied.Unpurchased', 'param': None, 'code': 'AccessDenied.Unpurchased'}, 'id': 'chatcmpl-185247af-cd11-48d5-8268-1e8b178d86b1', 'request_id': '185247af-cd11-48d5-8268-1e8b178d86b1'}
+Traceback:
+Traceback (most recent call last):
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\src\ai_social_scheduler\agents\router.py", line 228, in _execute
+    response = await self.structured_llm.ainvoke(messages_with_system)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 405, in ainvoke
+    llm_result = await self.agenerate_prompt(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1112, in agenerate_prompt
+    return await self.agenerate(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1070, in agenerate
+    raise exceptions[0]
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1323, in _agenerate_with_cache
+    result = await self._agenerate(
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_openai\chat_models\base.py", line 1546, in _agenerate
+    raise e
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_openai\chat_models\base.py", line 1539, in _agenerate
+    raw_response = await self.async_client.with_raw_response.create(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\openai\_legacy_response.py", line 381, in wrapped
+    return cast(LegacyAPIResponse[R], await func(*args, **kwargs))
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\openai\resources\chat\completions\completions.py", line 2672, in create
+    return await self._post(
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\openai\_base_client.py", line 1794, in post
+    return await self.request(cast_to, opts, stream=stream, stream_cls=stream_cls)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\openai\_base_client.py", line 1594, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.PermissionDeniedError: Error code: 403 - {'error': {'message': 'Access to model denied. Please make sure you are eligible for using the model.', 'type': 'AccessDenied.Unpurchased', 'param': None, 'code': 'AccessDenied.Unpurchased'}, 'id': 'chatcmpl-185247af-cd11-48d5-8268-1e8b178d86b1', 'request_id': '185247af-cd11-48d5-8268-1e8b178d86b1'}
+
+
+============================================================
+时间: 2025-12-13 03:27:09.276545
+错误: Error code: 401 - {'error': {'message': 'Authentication Fails, Your api key: ****f250 is invalid', 'type': 'authentication_error', 'param': None, 'code': 'invalid_request_error'}}
+Traceback:
+Traceback (most recent call last):
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\src\ai_social_scheduler\agents\router.py", line 228, in _execute
+    response = await self.structured_llm.ainvoke(messages_with_system)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 405, in ainvoke
+    llm_result = await self.agenerate_prompt(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1112, in agenerate_prompt
+    return await self.agenerate(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1070, in agenerate
+    raise exceptions[0]
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1323, in _agenerate_with_cache
+    result = await self._agenerate(
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_openai\chat_models\base.py", line 1546, in _agenerate
+    raise e
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_openai\chat_models\base.py", line 1539, in _agenerate
+    raw_response = await self.async_client.with_raw_response.create(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\openai\_legacy_response.py", line 381, in wrapped
+    return cast(LegacyAPIResponse[R], await func(*args, **kwargs))
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\openai\resources\chat\completions\completions.py", line 2672, in create
+    return await self._post(
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\openai\_base_client.py", line 1794, in post
+    return await self.request(cast_to, opts, stream=stream, stream_cls=stream_cls)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\openai\_base_client.py", line 1594, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.AuthenticationError: Error code: 401 - {'error': {'message': 'Authentication Fails, Your api key: ****f250 is invalid', 'type': 'authentication_error', 'param': None, 'code': 'invalid_request_error'}}
+
+
+============================================================
+时间: 2025-12-13 03:27:13.384424
+错误: Error code: 401 - {'error': {'message': 'Authentication Fails, Your api key: ****f250 is invalid', 'type': 'authentication_error', 'param': None, 'code': 'invalid_request_error'}}
+Traceback:
+Traceback (most recent call last):
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\src\ai_social_scheduler\agents\router.py", line 228, in _execute
+    response = await self.structured_llm.ainvoke(messages_with_system)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 405, in ainvoke
+    llm_result = await self.agenerate_prompt(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1112, in agenerate_prompt
+    return await self.agenerate(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1070, in agenerate
+    raise exceptions[0]
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1323, in _agenerate_with_cache
+    result = await self._agenerate(
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_openai\chat_models\base.py", line 1546, in _agenerate
+    raise e
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_openai\chat_models\base.py", line 1539, in _agenerate
+    raw_response = await self.async_client.with_raw_response.create(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\openai\_legacy_response.py", line 381, in wrapped
+    return cast(LegacyAPIResponse[R], await func(*args, **kwargs))
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\openai\resources\chat\completions\completions.py", line 2672, in create
+    return await self._post(
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\openai\_base_client.py", line 1794, in post
+    return await self.request(cast_to, opts, stream=stream, stream_cls=stream_cls)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\openai\_base_client.py", line 1594, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.AuthenticationError: Error code: 401 - {'error': {'message': 'Authentication Fails, Your api key: ****f250 is invalid', 'type': 'authentication_error', 'param': None, 'code': 'invalid_request_error'}}
+
+
+============================================================
+时间: 2025-12-13 03:27:17.529331
+错误: Error code: 401 - {'error': {'message': 'Authentication Fails, Your api key: ****f250 is invalid', 'type': 'authentication_error', 'param': None, 'code': 'invalid_request_error'}}
+Traceback:
+Traceback (most recent call last):
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\src\ai_social_scheduler\agents\router.py", line 228, in _execute
+    response = await self.structured_llm.ainvoke(messages_with_system)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 405, in ainvoke
+    llm_result = await self.agenerate_prompt(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1112, in agenerate_prompt
+    return await self.agenerate(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1070, in agenerate
+    raise exceptions[0]
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1323, in _agenerate_with_cache
+    result = await self._agenerate(
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_openai\chat_models\base.py", line 1546, in _agenerate
+    raise e
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_openai\chat_models\base.py", line 1539, in _agenerate
+    raw_response = await self.async_client.with_raw_response.create(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\openai\_legacy_response.py", line 381, in wrapped
+    return cast(LegacyAPIResponse[R], await func(*args, **kwargs))
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\openai\resources\chat\completions\completions.py", line 2672, in create
+    return await self._post(
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\openai\_base_client.py", line 1794, in post
+    return await self.request(cast_to, opts, stream=stream, stream_cls=stream_cls)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\openai\_base_client.py", line 1594, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.AuthenticationError: Error code: 401 - {'error': {'message': 'Authentication Fails, Your api key: ****f250 is invalid', 'type': 'authentication_error', 'param': None, 'code': 'invalid_request_error'}}
+
+
+============================================================
+时间: 2025-12-13 03:32:26.060804
+错误: Error code: 402 - {'error': {'message': 'Insufficient Balance', 'type': 'unknown_error', 'param': None, 'code': 'invalid_request_error'}}
+Traceback:
+Traceback (most recent call last):
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\src\ai_social_scheduler\agents\router.py", line 228, in _execute
+    response = await self.structured_llm.ainvoke(messages_with_system)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 405, in ainvoke
+    llm_result = await self.agenerate_prompt(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1112, in agenerate_prompt
+    return await self.agenerate(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1070, in agenerate
+    raise exceptions[0]
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1323, in _agenerate_with_cache
+    result = await self._agenerate(
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_openai\chat_models\base.py", line 1546, in _agenerate
+    raise e
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_openai\chat_models\base.py", line 1539, in _agenerate
+    raw_response = await self.async_client.with_raw_response.create(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\openai\_legacy_response.py", line 381, in wrapped
+    return cast(LegacyAPIResponse[R], await func(*args, **kwargs))
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\openai\resources\chat\completions\completions.py", line 2672, in create
+    return await self._post(
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\openai\_base_client.py", line 1794, in post
+    return await self.request(cast_to, opts, stream=stream, stream_cls=stream_cls)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\openai\_base_client.py", line 1594, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.APIStatusError: Error code: 402 - {'error': {'message': 'Insufficient Balance', 'type': 'unknown_error', 'param': None, 'code': 'invalid_request_error'}}
+
+
+============================================================
+时间: 2025-12-13 03:32:30.485328
+错误: Error code: 402 - {'error': {'message': 'Insufficient Balance', 'type': 'unknown_error', 'param': None, 'code': 'invalid_request_error'}}
+Traceback:
+Traceback (most recent call last):
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\src\ai_social_scheduler\agents\router.py", line 228, in _execute
+    response = await self.structured_llm.ainvoke(messages_with_system)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 405, in ainvoke
+    llm_result = await self.agenerate_prompt(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1112, in agenerate_prompt
+    return await self.agenerate(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1070, in agenerate
+    raise exceptions[0]
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1323, in _agenerate_with_cache
+    result = await self._agenerate(
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_openai\chat_models\base.py", line 1546, in _agenerate
+    raise e
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_openai\chat_models\base.py", line 1539, in _agenerate
+    raw_response = await self.async_client.with_raw_response.create(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\openai\_legacy_response.py", line 381, in wrapped
+    return cast(LegacyAPIResponse[R], await func(*args, **kwargs))
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\openai\resources\chat\completions\completions.py", line 2672, in create
+    return await self._post(
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\openai\_base_client.py", line 1794, in post
+    return await self.request(cast_to, opts, stream=stream, stream_cls=stream_cls)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\openai\_base_client.py", line 1594, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.APIStatusError: Error code: 402 - {'error': {'message': 'Insufficient Balance', 'type': 'unknown_error', 'param': None, 'code': 'invalid_request_error'}}
+
+
+============================================================
+时间: 2025-12-13 03:32:34.902855
+错误: Error code: 402 - {'error': {'message': 'Insufficient Balance', 'type': 'unknown_error', 'param': None, 'code': 'invalid_request_error'}}
+Traceback:
+Traceback (most recent call last):
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\src\ai_social_scheduler\agents\router.py", line 228, in _execute
+    response = await self.structured_llm.ainvoke(messages_with_system)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 405, in ainvoke
+    llm_result = await self.agenerate_prompt(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1112, in agenerate_prompt
+    return await self.agenerate(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1070, in agenerate
+    raise exceptions[0]
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1323, in _agenerate_with_cache
+    result = await self._agenerate(
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_openai\chat_models\base.py", line 1546, in _agenerate
+    raise e
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_openai\chat_models\base.py", line 1539, in _agenerate
+    raw_response = await self.async_client.with_raw_response.create(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\openai\_legacy_response.py", line 381, in wrapped
+    return cast(LegacyAPIResponse[R], await func(*args, **kwargs))
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\openai\resources\chat\completions\completions.py", line 2672, in create
+    return await self._post(
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\openai\_base_client.py", line 1794, in post
+    return await self.request(cast_to, opts, stream=stream, stream_cls=stream_cls)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\openai\_base_client.py", line 1594, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.APIStatusError: Error code: 402 - {'error': {'message': 'Insufficient Balance', 'type': 'unknown_error', 'param': None, 'code': 'invalid_request_error'}}
+

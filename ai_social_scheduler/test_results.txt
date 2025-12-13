@@ -1,0 +1,17 @@
+测试开始
+============================================================
+
+1. 启动 API 服务...
+等待服务启动...
+
+2. 发送测试请求...
+请求失败: HTTPConnectionPool(host='localhost', port=8000): Read timed out. (read timeout=30)
+
+3. 检查错误日志...
+未发现 router_error.txt - 可能没有错误
+
+4. 停止服务...
+
+测试完成!
+
+结果已保存到: C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\test_results.txt

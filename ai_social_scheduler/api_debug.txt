@@ -1,0 +1,716 @@
+[2025-12-09 00:11:33.383503] 收到请求: message=你好, thread_id=None
+[2025-12-09 00:11:33.622154] 当前状态: has_values=False
+[2025-12-09 00:11:33.622154] 新对话，开始执行图
+[2025-12-09 00:25:17.375738] 收到请求: message=你好, thread_id=None
+[2025-12-09 00:25:17.650833] 当前状态: has_values=False
+[2025-12-09 00:25:17.651336] 新对话，开始执行图
+[2025-12-09 00:30:05.581639] 收到请求: message=??, thread_id=demo-001
+[2025-12-09 00:30:05.840559] 当前状态: has_values=False
+[2025-12-09 00:30:05.841561] 新对话，开始执行图
+[2025-12-09 00:30:06.197006] 图执行完成 - 新对话
+[2025-12-09 00:30:06.197006] 结果中的消息数量: 2
+[2025-12-09 00:30:06.198267] 最后一条消息: 抱歉，我遇到了一点问题。请再说一次您的需求？
+[2025-12-09 00:30:06.198267] 最终响应: 抱歉，我遇到了一点问题。请再说一次您的需求？
+[2025-12-09 00:32:55.104443] 收到请求: message=??, thread_id=None
+[2025-12-09 00:32:55.420218] 当前状态: has_values=False
+[2025-12-09 00:32:55.421218] 新对话，开始执行图
+[2025-12-09 00:32:55.783971] 图执行完成 - 新对话
+[2025-12-09 00:32:55.783971] 结果中的消息数量: 2
+[2025-12-09 00:32:55.784867] 最后一条消息: 抱歉，我遇到了一点问题。请再说一次您的需求？
+[2025-12-09 00:32:55.784867] 最终响应: 抱歉，我遇到了一点问题。请再说一次您的需求？
+[2025-12-09 00:32:55.789493] 收到请求: message=???????????????, thread_id=7b0b18d1-dbd3-4d2c-8f60-3a40b7a7ac5b
+[2025-12-09 00:32:55.796152] 当前状态: has_values=True
+[2025-12-09 00:32:55.796152] 继续现有对话
+[2025-12-09 00:32:55.797678] 开始执行图 - 继续模式
+[2025-12-09 00:32:55.851106] 图执行完成
+[2025-12-09 00:32:55.851106] 结果中的消息数量: 4
+[2025-12-09 00:32:55.852105] 最后一条消息: 抱歉，我遇到了一点问题。请再说一次您的需求？
+[2025-12-09 00:32:55.852659] 最终响应: 抱歉，我遇到了一点问题。请再说一次您的需求？
+[2025-12-09 00:59:21.776054] 收到请求: message=??, thread_id=None
+[2025-12-09 00:59:22.147665] 当前状态: has_values=False
+[2025-12-09 00:59:22.148176] 新对话，开始执行图
+[2025-12-09 00:59:22.509547] 图执行完成 - 新对话
+[2025-12-09 00:59:22.509547] 结果中的消息数量: 2
+[2025-12-09 00:59:22.510551] 最后一条消息: 抱歉，我遇到了一点问题。请再说一次您的需求？
+[2025-12-09 00:59:22.510551] 最终响应: 抱歉，我遇到了一点问题。请再说一次您的需求？
+[2025-12-09 01:12:06.925606] 收到请求: message=test, thread_id=None
+[2025-12-09 01:12:07.190270] 当前状态: has_values=False
+[2025-12-09 01:12:07.191270] 新对话，开始执行图
+[2025-12-09 01:12:08.787430] 图执行完成 - 新对话
+[2025-12-09 01:12:08.787934] 结果中的消息数量: 2
+[2025-12-09 01:12:08.787934] 最后一条消息: 抱歉，我遇到了一点问题。请再说一次您的需求？
+[2025-12-09 01:12:08.787934] 最终响应: 抱歉，我遇到了一点问题。请再说一次您的需求？
+[2025-12-09 01:33:37.153753] 收到请求: message=??, thread_id=None
+[2025-12-09 01:33:37.542847] 当前状态: has_values=False
+[2025-12-09 01:33:37.542847] 新对话，开始执行图
+[2025-12-09 01:33:37.967008] 图执行完成 - 新对话
+[2025-12-09 01:33:37.967008] 结果中的消息数量: 2
+[2025-12-09 01:33:37.967510] 最后一条消息: 抱歉，我遇到了一点问题。请再说一次您的需求？
+[2025-12-09 01:33:37.967510] 最终响应: 抱歉，我遇到了一点问题。请再说一次您的需求？
+[2025-12-10 23:42:06.647524] 收到请求: message=你好, thread_id=None
+[2025-12-10 23:42:07.579095] 当前状态: has_values=False
+[2025-12-10 23:42:07.579598] 新对话，开始执行图
+[2025-12-10 23:42:46.660376] 图执行完成 - 新对话
+[2025-12-10 23:42:46.660376] 结果中的消息数量: 2
+[2025-12-10 23:42:46.661246] 最后一条消息: 抱歉，我遇到了一点问题。请再说一次您的需求？
+[2025-12-10 23:42:46.661246] 最终响应: 抱歉，我遇到了一点问题。请再说一次您的需求？
+[2025-12-11 00:09:25.182501] 收到请求: message=??, thread_id=None
+[2025-12-11 00:09:25.489537] 当前状态: has_values=False
+[2025-12-11 00:09:25.491202] 新对话，开始执行图
+[2025-12-11 00:09:29.714280] 图执行完成 - 新对话
+[2025-12-11 00:09:29.714280] 结果中的消息数量: 2
+[2025-12-11 00:09:29.714787] 最后一条消息: 你好！我是你的智能助手，可以帮你处理小红书内容创作等任务。请问有什么可以帮你的吗？😊
+[2025-12-11 00:09:29.715131] 最终响应: 你好！我是你的智能助手，可以帮你处理小红书内容创作等任务。请问有什么可以帮你的吗？😊
+[2025-12-11 01:10:11.226994] 收到请求: message=???????????????, thread_id=None
+[2025-12-11 01:10:11.494911] 当前状态: has_values=False
+[2025-12-11 01:10:11.494911] 新对话，开始执行图
+[2025-12-11 01:10:16.052301] 图执行完成 - 新对话
+[2025-12-11 01:10:16.052301] 结果中的消息数量: 2
+[2025-12-11 01:10:16.052301] 最后一条消息: 你好！我注意到你发了很多问号，是有什么问题需要帮助吗？我是你的小红书内容助手，可以帮你生成和发布笔记。请告诉我你的具体需求吧~
+[2025-12-11 01:10:16.052301] 最终响应: 你好！我注意到你发了很多问号，是有什么问题需要帮助吗？我是你的小红书内容助手，可以帮你生成和发布笔记。请告诉我你的具体需求吧~
+[2025-12-11 01:13:11.177978] 收到请求: message=你好，介绍一下你自己, thread_id=None
+[2025-12-11 01:13:11.435110] 当前状态: has_values=False
+[2025-12-11 01:13:11.435110] 新对话，开始执行图
+[2025-12-11 01:13:16.085641] 图执行完成 - 新对话
+[2025-12-11 01:13:16.086641] 结果中的消息数量: 2
+[2025-12-11 01:13:16.087643] 最后一条消息: 你好！我是你的智能路由助手，专门负责理解你的需求并为你连接到最合适的专家。目前，我可以帮你联系小红书内容生成专家（xhs_agent），它能创作和发布小红书笔记。有什么我可以为你做的吗？
+[2025-12-11 01:13:16.087643] 最终响应: 你好！我是你的智能路由助手，专门负责理解你的需求并为你连接到最合适的专家。目前，我可以帮你联系小红书内容生成专家（xhs_agent），它能创作和发布小红书笔记。有什么我可以为你做的吗？
+[2025-12-11 01:17:03.305445] 收到请求: message=帮我写一篇关于冬季护肤的小红书笔记，要有吸引人的标题和emoji, thread_id=None
+[2025-12-11 01:17:03.309950] 当前状态: has_values=False
+[2025-12-11 01:17:03.310951] 新对话，开始执行图
+[2025-12-11 01:17:08.261715] 错误: Error code: 400 - {'error': {'message': 'Model Not Exist', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_request_error'}}
+[2025-12-11 01:17:08.265717] Traceback: Traceback (most recent call last):
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\src\ai_social_scheduler\api\app.py", line 165, in chat
+    result = await app_graph.ainvoke(
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langgraph\pregel\main.py", line 3137, in ainvoke
+    async for chunk in self.astream(
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langgraph\pregel\main.py", line 2956, in astream
+    async for _ in runner.atick(
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langgraph\pregel\_runner.py", line 304, in atick
+    await arun_with_retry(
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langgraph\pregel\_retry.py", line 137, in arun_with_retry
+    return await task.proc.ainvoke(task.input, config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langgraph\_internal\_runnable.py", line 705, in ainvoke
+    input = await asyncio.create_task(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langgraph\_internal\_runnable.py", line 473, in ainvoke
+    ret = await self.afunc(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\src\ai_social_scheduler\agents\xhs\xhs_agent.py", line 175, in __call__
+    response = await self.llm_with_tools.ainvoke(messages_with_system)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_core\runnables\base.py", line 5547, in ainvoke
+    return await self.bound.ainvoke(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 405, in ainvoke
+    llm_result = await self.agenerate_prompt(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1112, in agenerate_prompt
+    return await self.agenerate(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1070, in agenerate
+    raise exceptions[0]
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1323, in _agenerate_with_cache
+    result = await self._agenerate(
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_openai\chat_models\base.py", line 1546, in _agenerate
+    raise e
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_openai\chat_models\base.py", line 1539, in _agenerate
+    raw_response = await self.async_client.with_raw_response.create(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\openai\_legacy_response.py", line 381, in wrapped
+    return cast(LegacyAPIResponse[R], await func(*args, **kwargs))
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\openai\resources\chat\completions\completions.py", line 2672, in create
+    return await self._post(
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\openai\_base_client.py", line 1794, in post
+    return await self.request(cast_to, opts, stream=stream, stream_cls=stream_cls)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\openai\_base_client.py", line 1594, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.BadRequestError: Error code: 400 - {'error': {'message': 'Model Not Exist', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_request_error'}}
+During task with name 'xhs_agent' and id '760bb987-32b3-5afa-4282-a0865ad4e198'
+
+[2025-12-11 01:17:30.335370] 收到请求: message=帮我写一篇关于冬季护肤的小红书笔记，要有吸引人的标题和emoji, thread_id=None
+[2025-12-11 01:17:30.341779] 当前状态: has_values=False
+[2025-12-11 01:17:30.341779] 新对话，开始执行图
+[2025-12-11 01:17:36.781347] 错误: Error code: 400 - {'error': {'message': 'Model Not Exist', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_request_error'}}
+[2025-12-11 01:17:36.783347] Traceback: Traceback (most recent call last):
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\src\ai_social_scheduler\api\app.py", line 165, in chat
+    result = await app_graph.ainvoke(
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langgraph\pregel\main.py", line 3137, in ainvoke
+    async for chunk in self.astream(
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langgraph\pregel\main.py", line 2956, in astream
+    async for _ in runner.atick(
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langgraph\pregel\_runner.py", line 304, in atick
+    await arun_with_retry(
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langgraph\pregel\_retry.py", line 137, in arun_with_retry
+    return await task.proc.ainvoke(task.input, config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langgraph\_internal\_runnable.py", line 705, in ainvoke
+    input = await asyncio.create_task(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langgraph\_internal\_runnable.py", line 473, in ainvoke
+    ret = await self.afunc(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\src\ai_social_scheduler\agents\xhs\xhs_agent.py", line 175, in __call__
+    response = await self.llm_with_tools.ainvoke(messages_with_system)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_core\runnables\base.py", line 5547, in ainvoke
+    return await self.bound.ainvoke(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 405, in ainvoke
+    llm_result = await self.agenerate_prompt(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1112, in agenerate_prompt
+    return await self.agenerate(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1070, in agenerate
+    raise exceptions[0]
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1323, in _agenerate_with_cache
+    result = await self._agenerate(
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_openai\chat_models\base.py", line 1546, in _agenerate
+    raise e
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_openai\chat_models\base.py", line 1539, in _agenerate
+    raw_response = await self.async_client.with_raw_response.create(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\openai\_legacy_response.py", line 381, in wrapped
+    return cast(LegacyAPIResponse[R], await func(*args, **kwargs))
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\openai\resources\chat\completions\completions.py", line 2672, in create
+    return await self._post(
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\openai\_base_client.py", line 1794, in post
+    return await self.request(cast_to, opts, stream=stream, stream_cls=stream_cls)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\openai\_base_client.py", line 1594, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.BadRequestError: Error code: 400 - {'error': {'message': 'Model Not Exist', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_request_error'}}
+During task with name 'xhs_agent' and id '264e49a9-4a6a-bb00-e26d-76aea631ef11'
+
+[2025-12-11 01:17:48.231319] 收到请求: message=?????????????????,????????, thread_id=None
+[2025-12-11 01:17:48.240838] 当前状态: has_values=False
+[2025-12-11 01:17:48.240838] 新对话，开始执行图
+[2025-12-11 01:17:52.447457] 图执行完成 - 新对话
+[2025-12-11 01:17:52.447457] 结果中的消息数量: 2
+[2025-12-11 01:17:52.448460] 最后一条消息: 你好！我注意到你的消息有些特殊符号。我是你的智能助手，可以帮你生成小红书笔记等内容。请告诉我你想做什么？😊
+[2025-12-11 01:17:52.448460] 最终响应: 你好！我注意到你的消息有些特殊符号。我是你的智能助手，可以帮你生成小红书笔记等内容。请告诉我你想做什么？😊
+[2025-12-11 01:18:21.339723] 收到请求: message=?????????????????,?????????emoji, thread_id=None
+[2025-12-11 01:18:21.345045] 当前状态: has_values=False
+[2025-12-11 01:18:21.346045] 新对话，开始执行图
+[2025-12-11 01:18:25.621756] 图执行完成 - 新对话
+[2025-12-11 01:18:25.621756] 结果中的消息数量: 2
+[2025-12-11 01:18:25.621756] 最后一条消息: 你好！我好像没有完全理解你的意思。我是你的小红书内容助手，可以帮你生成精美的小红书笔记。请告诉我你想创作什么内容吧！✨
+[2025-12-11 01:18:25.621756] 最终响应: 你好！我好像没有完全理解你的意思。我是你的小红书内容助手，可以帮你生成精美的小红书笔记。请告诉我你想创作什么内容吧！✨
+[2025-12-11 01:18:59.751879] 收到请求: message=帮我写一篇关于冬季护肤的小红书笔记，要有吸引人的标题和emoji, thread_id=None
+[2025-12-11 01:18:59.756880] 当前状态: has_values=False
+[2025-12-11 01:18:59.756880] 新对话，开始执行图
+[2025-12-11 01:19:05.051623] 错误: Error code: 400 - {'error': {'message': 'Model Not Exist', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_request_error'}}
+[2025-12-11 01:19:05.052625] Traceback: Traceback (most recent call last):
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\src\ai_social_scheduler\api\app.py", line 165, in chat
+    result = await app_graph.ainvoke(
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langgraph\pregel\main.py", line 3137, in ainvoke
+    async for chunk in self.astream(
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langgraph\pregel\main.py", line 2956, in astream
+    async for _ in runner.atick(
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langgraph\pregel\_runner.py", line 304, in atick
+    await arun_with_retry(
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langgraph\pregel\_retry.py", line 137, in arun_with_retry
+    return await task.proc.ainvoke(task.input, config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langgraph\_internal\_runnable.py", line 705, in ainvoke
+    input = await asyncio.create_task(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langgraph\_internal\_runnable.py", line 473, in ainvoke
+    ret = await self.afunc(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\src\ai_social_scheduler\agents\xhs\xhs_agent.py", line 175, in __call__
+    response = await self.llm_with_tools.ainvoke(messages_with_system)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_core\runnables\base.py", line 5547, in ainvoke
+    return await self.bound.ainvoke(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 405, in ainvoke
+    llm_result = await self.agenerate_prompt(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1112, in agenerate_prompt
+    return await self.agenerate(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1070, in agenerate
+    raise exceptions[0]
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1323, in _agenerate_with_cache
+    result = await self._agenerate(
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_openai\chat_models\base.py", line 1546, in _agenerate
+    raise e
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\langchain_openai\chat_models\base.py", line 1539, in _agenerate
+    raw_response = await self.async_client.with_raw_response.create(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\openai\_legacy_response.py", line 381, in wrapped
+    return cast(LegacyAPIResponse[R], await func(*args, **kwargs))
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\openai\resources\chat\completions\completions.py", line 2672, in create
+    return await self._post(
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\openai\_base_client.py", line 1794, in post
+    return await self.request(cast_to, opts, stream=stream, stream_cls=stream_cls)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\.venv\Lib\site-packages\openai\_base_client.py", line 1594, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.BadRequestError: Error code: 400 - {'error': {'message': 'Model Not Exist', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_request_error'}}
+During task with name 'xhs_agent' and id '1ff28c9c-dcc3-1259-fa5c-63e4c820121f'
+
+[2025-12-11 01:21:35.607331] 收到请求: message=帮我写一篇关于冬季护肤的小红书笔记，要有吸引人的标题和emoji, thread_id=None
+[2025-12-11 01:21:35.858175] 当前状态: has_values=False
+[2025-12-11 01:21:35.859393] 新对话，开始执行图
+[2025-12-11 01:22:08.818422] 图执行完成 - 新对话
+[2025-12-11 01:22:08.819429] 结果中的消息数量: 4
+[2025-12-11 01:22:08.819429] 最后一条消息: 任务已完成！还有什么需要我帮助的吗？
+[2025-12-11 01:22:08.820425] 最终响应: 任务已完成！还有什么需要我帮助的吗？
+[2025-12-11 01:22:13.872169] 收到请求: message=发布这篇笔记, thread_id=28e0b6c4-db1c-4d91-9820-7b7d53726ecb
+[2025-12-11 01:22:13.881680] 当前状态: has_values=True
+[2025-12-11 01:22:13.881680] 继续现有对话
+[2025-12-11 01:22:13.883680] 开始执行图 - 继续模式
+[2025-12-11 01:22:13.885680] 图执行完成
+[2025-12-11 01:22:13.885680] 结果中的消息数量: 6
+[2025-12-11 01:22:13.886681] 最后一条消息: 任务已完成！还有什么需要我帮助的吗？
+[2025-12-11 01:22:13.886681] 最终响应: 任务已完成！还有什么需要我帮助的吗？
+[2025-12-11 01:22:18.943397] 收到请求: message=笔记发布成功了吗？, thread_id=28e0b6c4-db1c-4d91-9820-7b7d53726ecb
+[2025-12-11 01:22:18.955911] 当前状态: has_values=True
+[2025-12-11 01:22:18.955911] 继续现有对话
+[2025-12-11 01:22:18.958044] 开始执行图 - 继续模式
+[2025-12-11 01:22:18.961050] 图执行完成
+[2025-12-11 01:22:18.962046] 结果中的消息数量: 8
+[2025-12-11 01:22:18.963048] 最后一条消息: 任务已完成！还有什么需要我帮助的吗？
+[2025-12-11 01:22:18.963048] 最终响应: 任务已完成！还有什么需要我帮助的吗？
+[2025-12-11 01:25:45.944665] 收到请求: message=帮我写一篇关于冬季护肤的小红书笔记，要有吸引人的标题和emoji, thread_id=None
+[2025-12-11 01:25:46.202038] 当前状态: has_values=False
+[2025-12-11 01:25:46.203038] 新对话，开始执行图
+[2025-12-11 01:26:12.618111] 图执行完成 - 新对话
+[2025-12-11 01:26:12.618111] 结果中的消息数量: 4
+[2025-12-11 01:26:12.619484] 最后一条消息: 任务已完成！还有什么需要我帮助的吗？
+[2025-12-11 01:26:12.620491] 最终响应: 任务已完成！还有什么需要我帮助的吗？
+[2025-12-11 01:26:17.667703] 收到请求: message=发布这篇笔记, thread_id=1a87d962-2873-427c-b607-7b0a7f25a2d3
+[2025-12-11 01:26:17.672421] 当前状态: has_values=True
+[2025-12-11 01:26:17.673422] 继续现有对话
+[2025-12-11 01:26:17.674421] 开始执行图 - 继续模式
+[2025-12-11 01:26:17.676421] 图执行完成
+[2025-12-11 01:26:17.676421] 结果中的消息数量: 6
+[2025-12-11 01:26:17.677923] 最后一条消息: 任务已完成！还有什么需要我帮助的吗？
+[2025-12-11 01:26:17.677923] 最终响应: 任务已完成！还有什么需要我帮助的吗？
+[2025-12-11 01:26:22.724720] 收到请求: message=笔记发布成功了吗？, thread_id=1a87d962-2873-427c-b607-7b0a7f25a2d3
+[2025-12-11 01:26:22.732957] 当前状态: has_values=True
+[2025-12-11 01:26:22.732957] 继续现有对话
+[2025-12-11 01:26:22.735402] 开始执行图 - 继续模式
+[2025-12-11 01:26:22.738070] 图执行完成
+[2025-12-11 01:26:22.738907] 结果中的消息数量: 8
+[2025-12-11 01:26:22.738907] 最后一条消息: 任务已完成！还有什么需要我帮助的吗？
+[2025-12-11 01:26:22.738907] 最终响应: 任务已完成！还有什么需要我帮助的吗？
+[2025-12-11 08:21:44.520869] 收到请求: message=帮我写一篇关于冬季护肤的小红书笔记，要有吸引人的标题和emoji, thread_id=None
+[2025-12-11 08:21:44.786814] 当前状态: has_values=False
+[2025-12-11 08:21:44.786814] 新对话，开始执行图
+[2025-12-11 08:22:07.576939] 收到请求: message=帮我写一篇关于冬季护肤的小红书笔记，要有吸引人的标题和emoji, thread_id=None
+[2025-12-11 08:22:07.589956] 当前状态: has_values=False
+[2025-12-11 08:22:07.589956] 新对话，开始执行图
+[2025-12-11 08:22:21.133371] 图执行完成 - 新对话
+[2025-12-11 08:22:21.133371] 结果中的消息数量: 4
+[2025-12-11 08:22:21.133371] 最后一条消息: 任务已完成！还有什么需要我帮助的吗？
+[2025-12-11 08:22:21.134371] 最终响应: 任务已完成！还有什么需要我帮助的吗？
+[2025-12-11 08:22:37.984961] 图执行完成 - 新对话
+[2025-12-11 08:22:37.985960] 结果中的消息数量: 4
+[2025-12-11 08:22:37.985960] 最后一条消息: 任务已完成！还有什么需要我帮助的吗？
+[2025-12-11 08:22:37.985960] 最终响应: 任务已完成！还有什么需要我帮助的吗？
+[2025-12-11 08:24:07.174488] 收到请求: message=??,????????, thread_id=None
+[2025-12-11 08:24:07.180534] 当前状态: has_values=False
+[2025-12-11 08:24:07.180534] 新对话，开始执行图
+[2025-12-11 08:24:11.899809] 图执行完成 - 新对话
+[2025-12-11 08:24:11.900806] 结果中的消息数量: 2
+[2025-12-11 08:24:11.900806] 最后一条消息: 你好！我好像没太明白你的意思。我是你的小红书内容助手，可以帮你生成精美的小红书笔记。需要我帮你创作什么内容吗？✨
+[2025-12-11 08:24:11.900806] 最终响应: 你好！我好像没太明白你的意思。我是你的小红书内容助手，可以帮你生成精美的小红书笔记。需要我帮你创作什么内容吗？✨
+[2025-12-11 08:29:00.659664] 收到请求: message=Hello, thread_id=None
+[2025-12-11 08:29:00.664662] 当前状态: has_values=False
+[2025-12-11 08:29:00.664662] 新对话，开始执行图
+[2025-12-11 08:29:04.266839] 收到请求: message=Hello, thread_id=None
+[2025-12-11 08:29:04.273528] 当前状态: has_values=False
+[2025-12-11 08:29:04.274527] 新对话，开始执行图
+[2025-12-11 08:29:04.945509] 图执行完成 - 新对话
+[2025-12-11 08:29:04.945509] 结果中的消息数量: 2
+[2025-12-11 08:29:04.946509] 最后一条消息: Hello! I'm your Xiaohongshu content assistant. I can help you create beautiful Xiaohongshu notes. What kind of content would you like me to create for you? ✨
+[2025-12-11 08:29:04.946509] 最终响应: Hello! I'm your Xiaohongshu content assistant. I can help you create beautiful Xiaohongshu notes. What kind of content would you like me to create for you? ✨
+[2025-12-11 08:29:08.751846] 图执行完成 - 新对话
+[2025-12-11 08:29:08.751846] 结果中的消息数量: 2
+[2025-12-11 08:29:08.752846] 最后一条消息: Hello! I'm your Xiaohongshu content assistant. I can help you create beautiful Xiaohongshu notes. What kind of content would you like me to create for you? ✨
+[2025-12-11 08:29:08.752846] 最终响应: Hello! I'm your Xiaohongshu content assistant. I can help you create beautiful Xiaohongshu notes. What kind of content would you like me to create for you? ✨
+[2025-12-11 08:33:14.268034] 收到请求: message=Hello, thread_id=None
+[2025-12-11 08:33:14.521354] 当前状态: has_values=False
+[2025-12-11 08:33:14.522354] 新对话，开始执行图
+[2025-12-11 08:33:18.379009] 图执行完成 - 新对话
+[2025-12-11 08:33:18.379009] 结果中的消息数量: 2
+[2025-12-11 08:33:18.380009] 最后一条消息: 你好！我是你的小红书内容助手，可以帮你生成精美的小红书笔记。需要我帮你创作什么内容吗？✨
+[2025-12-11 08:33:18.380009] 最终响应: 你好！我是你的小红书内容助手，可以帮你生成精美的小红书笔记。需要我帮你创作什么内容吗？✨
+[2025-12-11 08:33:22.446202] 收到请求: message=Write about winter skincare, thread_id=9a9996fa-9219-46f8-b58e-ea4ac091fb63
+[2025-12-11 08:33:22.456359] 当前状态: has_values=True
+[2025-12-11 08:33:22.457359] 继续现有对话
+[2025-12-11 08:33:22.460872] 开始执行图 - 继续模式
+[2025-12-11 08:33:49.368370] 图执行完成
+[2025-12-11 08:33:49.369369] 结果中的消息数量: 6
+[2025-12-11 08:33:49.369369] 最后一条消息: 任务已完成！还有什么需要我帮助的吗？
+[2025-12-11 08:33:49.369369] 最终响应: 任务已完成！还有什么需要我帮助的吗？
+[2025-12-11 08:33:53.431315] 收到请求: message=Publish, thread_id=9a9996fa-9219-46f8-b58e-ea4ac091fb63
+[2025-12-11 08:33:53.439309] 当前状态: has_values=True
+[2025-12-11 08:33:53.440312] 继续现有对话
+[2025-12-11 08:33:53.440817] 开始执行图 - 继续模式
+[2025-12-11 08:33:53.443818] 图执行完成
+[2025-12-11 08:33:53.443818] 结果中的消息数量: 8
+[2025-12-11 08:33:53.444930] 最后一条消息: 任务已完成！还有什么需要我帮助的吗？
+[2025-12-11 08:33:53.444930] 最终响应: 任务已完成！还有什么需要我帮助的吗？
+[2025-12-11 08:36:11.034207] 收到请求: message=Hello, thread_id=None
+[2025-12-11 08:36:11.298961] 当前状态: has_values=False
+[2025-12-11 08:36:11.298961] 新对话，开始执行图
+[2025-12-11 08:36:15.650844] 图执行完成 - 新对话
+[2025-12-11 08:36:15.651845] 结果中的消息数量: 2
+[2025-12-11 08:36:15.651845] 最后一条消息: Hello! I'm your Xiaohongshu content assistant. I can help you create beautiful Xiaohongshu notes. What kind of content would you like me to create for you? ✨
+[2025-12-11 08:36:15.652846] 最终响应: Hello! I'm your Xiaohongshu content assistant. I can help you create beautiful Xiaohongshu notes. What kind of content would you like me to create for you? ✨
+[2025-12-11 08:36:19.719532] 收到请求: message=Write about winter skincare, thread_id=06b4d1a2-0204-4a3a-b249-24528e465e96
+[2025-12-11 08:36:19.726844] 当前状态: has_values=True
+[2025-12-11 08:36:19.726844] 继续现有对话
+[2025-12-11 08:36:19.728844] 开始执行图 - 继续模式
+[2025-12-11 08:36:36.001796] 图执行完成
+[2025-12-11 08:36:36.002796] 结果中的消息数量: 6
+[2025-12-11 08:36:36.002796] 最后一条消息: 任务已完成！还有什么需要我帮助的吗？
+[2025-12-11 08:36:36.003796] 最终响应: 任务已完成！还有什么需要我帮助的吗？
+[2025-12-11 08:36:40.068553] 收到请求: message=Publish, thread_id=06b4d1a2-0204-4a3a-b249-24528e465e96
+[2025-12-11 08:36:40.078303] 当前状态: has_values=True
+[2025-12-11 08:36:40.078303] 继续现有对话
+[2025-12-11 08:36:40.080303] 开始执行图 - 继续模式
+[2025-12-11 08:36:40.082303] 图执行完成
+[2025-12-11 08:36:40.083808] 结果中的消息数量: 8
+[2025-12-11 08:36:40.083808] 最后一条消息: 任务已完成！还有什么需要我帮助的吗？
+[2025-12-11 08:36:40.083808] 最终响应: 任务已完成！还有什么需要我帮助的吗？
+[2025-12-11 08:39:11.786941] 收到请求: message=Hello, thread_id=None
+[2025-12-11 08:39:12.051340] 当前状态: has_values=False
+[2025-12-11 08:39:12.051340] 新对话，开始执行图
+[2025-12-11 08:39:16.848101] 图执行完成 - 新对话
+[2025-12-11 08:39:16.848101] 结果中的消息数量: 2
+[2025-12-11 08:39:16.848101] 最后一条消息: Hello! I'm your Xiaohongshu content assistant. I can help you create beautiful Xiaohongshu notes. What content would you like me to create for you? ✨
+[2025-12-11 08:39:16.848101] 最终响应: Hello! I'm your Xiaohongshu content assistant. I can help you create beautiful Xiaohongshu notes. What content would you like me to create for you? ✨
+[2025-12-11 08:39:20.891121] 收到请求: message=Write about winter skincare, thread_id=297be578-0681-4124-9e25-4759e3438376
+[2025-12-11 08:39:20.896659] 当前状态: has_values=True
+[2025-12-11 08:39:20.897661] 继续现有对话
+[2025-12-11 08:39:20.899127] 开始执行图 - 继续模式
+[2025-12-11 08:39:51.280230] 图执行完成
+[2025-12-11 08:39:51.281230] 结果中的消息数量: 6
+[2025-12-11 08:39:51.281230] 最后一条消息: 任务已完成！还有什么需要我帮助的吗？
+[2025-12-11 08:39:51.281230] 最终响应: 任务已完成！还有什么需要我帮助的吗？
+[2025-12-11 08:39:55.324662] 收到请求: message=Publish, thread_id=297be578-0681-4124-9e25-4759e3438376
+[2025-12-11 08:39:55.336625] 当前状态: has_values=True
+[2025-12-11 08:39:55.336625] 继续现有对话
+[2025-12-11 08:39:55.338626] 开始执行图 - 继续模式
+[2025-12-11 08:39:55.340626] 图执行完成
+[2025-12-11 08:39:55.341625] 结果中的消息数量: 8
+[2025-12-11 08:39:55.341625] 最后一条消息: 任务已完成！还有什么需要我帮助的吗？
+[2025-12-11 08:39:55.341625] 最终响应: 任务已完成！还有什么需要我帮助的吗？
+[2025-12-11 08:44:55.667349] 收到请求: message=Hello, thread_id=None
+[2025-12-11 08:44:55.954585] 当前状态: has_values=False
+[2025-12-11 08:44:55.955582] 新对话，开始执行图
+[2025-12-11 08:45:00.381168] 图执行完成 - 新对话
+[2025-12-11 08:45:00.382169] 结果中的消息数量: 2
+[2025-12-11 08:45:00.382169] 最后一条消息: Hello! I'm your Xiaohongshu content assistant. I can help you create beautiful Xiaohongshu notes. What kind of content would you like me to help you with today? ✨
+[2025-12-11 08:45:00.382169] 最终响应: Hello! I'm your Xiaohongshu content assistant. I can help you create beautiful Xiaohongshu notes. What kind of content would you like me to help you with today? ✨
+[2025-12-11 08:45:04.448306] 收到请求: message=Write about winter skincare, thread_id=99e4e213-da0f-4a27-bf88-0ddb58e8cbe6
+[2025-12-11 08:45:04.453303] 当前状态: has_values=True
+[2025-12-11 08:45:04.454799] 继续现有对话
+[2025-12-11 08:45:04.455797] 开始执行图 - 继续模式
+[2025-12-11 08:46:36.573018] 图执行完成
+[2025-12-11 08:46:36.574236] 结果中的消息数量: 6
+[2025-12-11 08:46:36.574236] 最后一条消息: 任务已完成！还有什么需要我帮助的吗？
+[2025-12-11 08:46:36.575235] 最终响应: 任务已完成！还有什么需要我帮助的吗？
+[2025-12-11 08:56:00.590445] 收到请求: message=Hello, thread_id=None
+[2025-12-11 08:56:00.815738] 当前状态: has_values=False
+[2025-12-11 08:56:00.815738] 新对话，开始执行图
+[2025-12-11 08:56:04.414172] 图执行完成 - 新对话
+[2025-12-11 08:56:04.414172] 结果中的消息数量: 2
+[2025-12-11 08:56:04.414172] 最后一条消息: 你好！我是你的小红书内容助手，可以帮你生成精美的小红书笔记。需要我帮你创作什么内容吗？✨
+[2025-12-11 08:56:04.414172] 最终响应: 你好！我是你的小红书内容助手，可以帮你生成精美的小红书笔记。需要我帮你创作什么内容吗？✨
+[2025-12-11 08:56:08.465661] 收到请求: message=Write about winter skincare, thread_id=7c40748f-d966-4373-be80-5ee54cde466e
+[2025-12-11 08:56:08.472905] 当前状态: has_values=True
+[2025-12-11 08:56:08.473907] 继续现有对话
+[2025-12-11 08:56:08.474905] 开始执行图 - 继续模式
+[2025-12-11 08:57:51.463836] 图执行完成
+[2025-12-11 08:57:51.463836] 结果中的消息数量: 6
+[2025-12-11 08:57:51.463836] 最后一条消息: 任务已完成！还有什么需要我帮助的吗？
+[2025-12-11 08:57:51.463836] 最终响应: 任务已完成！还有什么需要我帮助的吗？
+[2025-12-11 08:59:06.282769] 收到请求: message=Hello, thread_id=None
+[2025-12-11 08:59:06.290272] 当前状态: has_values=False
+[2025-12-11 08:59:06.290272] 新对话，开始执行图
+[2025-12-11 08:59:10.589794] 图执行完成 - 新对话
+[2025-12-11 08:59:10.590797] 结果中的消息数量: 2
+[2025-12-11 08:59:10.590797] 最后一条消息: Hello! I'm your Xiaohongshu content assistant. I can help you create beautiful Xiaohongshu notes. What content would you like me to create for you? ✨
+[2025-12-11 08:59:10.590797] 最终响应: Hello! I'm your Xiaohongshu content assistant. I can help you create beautiful Xiaohongshu notes. What content would you like me to create for you? ✨
+[2025-12-11 08:59:14.643228] 收到请求: message=Write about winter skincare, thread_id=4a6bf16b-0f99-4377-8248-9d7b70fc3b86
+[2025-12-11 08:59:14.648311] 当前状态: has_values=True
+[2025-12-11 08:59:14.648311] 继续现有对话
+[2025-12-11 08:59:14.649607] 开始执行图 - 继续模式
+[2025-12-11 09:00:44.265169] 图执行完成
+[2025-12-11 09:00:44.265169] 结果中的消息数量: 6
+[2025-12-11 09:00:44.265169] 最后一条消息: 任务已完成！还有什么需要我帮助的吗？
+[2025-12-11 09:00:44.265169] 最终响应: 任务已完成！还有什么需要我帮助的吗？
+[2025-12-11 09:00:48.295959] 收到请求: message=Publish, thread_id=4a6bf16b-0f99-4377-8248-9d7b70fc3b86
+[2025-12-11 09:00:48.304959] 当前状态: has_values=True
+[2025-12-11 09:00:48.304959] 继续现有对话
+[2025-12-11 09:00:48.305958] 开始执行图 - 继续模式
+[2025-12-11 09:00:48.307959] 图执行完成
+[2025-12-11 09:00:48.308959] 结果中的消息数量: 8
+[2025-12-11 09:00:48.308959] 最后一条消息: 任务已完成！还有什么需要我帮助的吗？
+[2025-12-11 09:00:48.308959] 最终响应: 任务已完成！还有什么需要我帮助的吗？
+[2025-12-13 00:49:05.757102] 收到请求: message=Hello, thread_id=None
+[2025-12-13 00:49:06.019806] 当前状态: has_values=False
+[2025-12-13 00:49:06.020756] 新对话，开始执行图
+[2025-12-13 00:49:06.200592] 图执行完成 - 新对话
+[2025-12-13 00:49:06.200592] 结果中的消息数量: 2
+[2025-12-13 00:49:06.200592] 最后一条消息: 抱歉，我遇到了一点问题。请再说一次您的需求？
+[2025-12-13 00:49:06.201863] 最终响应: 抱歉，我遇到了一点问题。请再说一次您的需求？
+[2025-12-13 00:49:10.259387] 收到请求: message=Write about winter skincare, thread_id=b6dda895-777d-4c18-957e-031468ae7e9a
+[2025-12-13 00:49:10.270493] 当前状态: has_values=True
+[2025-12-13 00:49:10.270493] 继续现有对话
+[2025-12-13 00:49:10.272657] 开始执行图 - 继续模式
+[2025-12-13 00:49:10.323131] 图执行完成
+[2025-12-13 00:49:10.323131] 结果中的消息数量: 4
+[2025-12-13 00:49:10.323131] 最后一条消息: 抱歉，我遇到了一点问题。请再说一次您的需求？
+[2025-12-13 00:49:10.324133] 最终响应: 抱歉，我遇到了一点问题。请再说一次您的需求？
+[2025-12-13 00:49:14.378209] 收到请求: message=Publish, thread_id=b6dda895-777d-4c18-957e-031468ae7e9a
+[2025-12-13 00:49:14.388573] 当前状态: has_values=True
+[2025-12-13 00:49:14.388573] 继续现有对话
+[2025-12-13 00:49:14.390075] 开始执行图 - 继续模式
+[2025-12-13 00:49:14.440172] 图执行完成
+[2025-12-13 00:49:14.440172] 结果中的消息数量: 6
+[2025-12-13 00:49:14.441097] 最后一条消息: 抱歉，我遇到了一点问题。请再说一次您的需求？
+[2025-12-13 00:49:14.441097] 最终响应: 抱歉，我遇到了一点问题。请再说一次您的需求？
+[2025-12-13 00:52:26.723819] 收到请求: message=Hello, thread_id=None
+[2025-12-13 00:52:26.728818] 当前状态: has_values=False
+[2025-12-13 00:52:26.730320] 新对话，开始执行图
+[2025-12-13 00:52:26.872335] 图执行完成 - 新对话
+[2025-12-13 00:52:26.872335] 结果中的消息数量: 2
+[2025-12-13 00:52:26.873468] 最后一条消息: 抱歉，我遇到了一点问题。请再说一次您的需求？
+[2025-12-13 00:52:26.873468] 最终响应: 抱歉，我遇到了一点问题。请再说一次您的需求？
+[2025-12-13 00:52:30.942279] 收到请求: message=Write about winter skincare, thread_id=9d7a91c1-ec83-4a58-94d4-d5bc750ba878
+[2025-12-13 00:52:30.952301] 当前状态: has_values=True
+[2025-12-13 00:52:30.953304] 继续现有对话
+[2025-12-13 00:52:30.954303] 开始执行图 - 继续模式
+[2025-12-13 00:52:31.008595] 图执行完成
+[2025-12-13 00:52:31.009599] 结果中的消息数量: 4
+[2025-12-13 00:52:31.009599] 最后一条消息: 抱歉，我遇到了一点问题。请再说一次您的需求？
+[2025-12-13 00:52:31.010599] 最终响应: 抱歉，我遇到了一点问题。请再说一次您的需求？
+[2025-12-13 00:52:35.076538] 收到请求: message=Publish, thread_id=9d7a91c1-ec83-4a58-94d4-d5bc750ba878
+[2025-12-13 00:52:35.086049] 当前状态: has_values=True
+[2025-12-13 00:52:35.087046] 继续现有对话
+[2025-12-13 00:52:35.088047] 开始执行图 - 继续模式
+[2025-12-13 00:52:35.138578] 图执行完成
+[2025-12-13 00:52:35.138578] 结果中的消息数量: 6
+[2025-12-13 00:52:35.138578] 最后一条消息: 抱歉，我遇到了一点问题。请再说一次您的需求？
+[2025-12-13 00:52:35.138578] 最终响应: 抱歉，我遇到了一点问题。请再说一次您的需求？
+[2025-12-13 00:53:32.820481] 收到请求: message=Hello, thread_id=None
+[2025-12-13 00:53:32.999234] 当前状态: has_values=False
+[2025-12-13 00:53:32.999234] 新对话，开始执行图
+[2025-12-13 00:53:33.149789] 图执行完成 - 新对话
+[2025-12-13 00:53:33.149789] 结果中的消息数量: 2
+[2025-12-13 00:53:33.150789] 最后一条消息: 抱歉，我遇到了一点问题。请再说一次您的需求？
+[2025-12-13 00:53:33.150789] 最终响应: 抱歉，我遇到了一点问题。请再说一次您的需求？
+[2025-12-13 00:53:37.192478] 收到请求: message=Write about winter skincare, thread_id=0c3005a6-33da-4df8-9476-6746fbef13db
+[2025-12-13 00:53:37.197976] 当前状态: has_values=True
+[2025-12-13 00:53:37.198978] 继续现有对话
+[2025-12-13 00:53:37.199978] 开始执行图 - 继续模式
+[2025-12-13 00:53:37.249693] 图执行完成
+[2025-12-13 00:53:37.250693] 结果中的消息数量: 4
+[2025-12-13 00:53:37.250693] 最后一条消息: 抱歉，我遇到了一点问题。请再说一次您的需求？
+[2025-12-13 00:53:37.250693] 最终响应: 抱歉，我遇到了一点问题。请再说一次您的需求？
+[2025-12-13 00:53:41.319660] 收到请求: message=Publish, thread_id=0c3005a6-33da-4df8-9476-6746fbef13db
+[2025-12-13 00:53:41.324658] 当前状态: has_values=True
+[2025-12-13 00:53:41.325658] 继续现有对话
+[2025-12-13 00:53:41.326658] 开始执行图 - 继续模式
+[2025-12-13 00:53:41.376945] 图执行完成
+[2025-12-13 00:53:41.376945] 结果中的消息数量: 6
+[2025-12-13 00:53:41.377948] 最后一条消息: 抱歉，我遇到了一点问题。请再说一次您的需求？
+[2025-12-13 00:53:41.377948] 最终响应: 抱歉，我遇到了一点问题。请再说一次您的需求？
+[2025-12-13 03:07:11.849658] 收到请求: message=Hello, thread_id=None
+[2025-12-13 03:07:12.047058] 当前状态: has_values=False
+[2025-12-13 03:07:12.048034] 新对话，开始执行图
+[2025-12-13 03:07:12.202125] 图执行完成 - 新对话
+[2025-12-13 03:07:12.202125] 结果中的消息数量: 2
+[2025-12-13 03:07:12.203123] 最后一条消息: 抱歉，我遇到了一点问题。请再说一次您的需求？
+[2025-12-13 03:07:12.203123] 最终响应: 抱歉，我遇到了一点问题。请再说一次您的需求？
+[2025-12-13 03:07:16.267480] 收到请求: message=Write about winter skincare, thread_id=da946e9d-aea7-486a-b1a5-44f623af6d58
+[2025-12-13 03:07:16.279018] 当前状态: has_values=True
+[2025-12-13 03:07:16.279018] 继续现有对话
+[2025-12-13 03:07:16.281018] 开始执行图 - 继续模式
+[2025-12-13 03:07:16.326552] 图执行完成
+[2025-12-13 03:07:16.327552] 结果中的消息数量: 4
+[2025-12-13 03:07:16.327552] 最后一条消息: 抱歉，我遇到了一点问题。请再说一次您的需求？
+[2025-12-13 03:07:16.327552] 最终响应: 抱歉，我遇到了一点问题。请再说一次您的需求？
+[2025-12-13 03:07:20.387554] 收到请求: message=Publish, thread_id=da946e9d-aea7-486a-b1a5-44f623af6d58
+[2025-12-13 03:07:20.397059] 当前状态: has_values=True
+[2025-12-13 03:07:20.397059] 继续现有对话
+[2025-12-13 03:07:20.399061] 开始执行图 - 继续模式
+[2025-12-13 03:07:20.449693] 图执行完成
+[2025-12-13 03:07:20.449693] 结果中的消息数量: 6
+[2025-12-13 03:07:20.449693] 最后一条消息: 抱歉，我遇到了一点问题。请再说一次您的需求？
+[2025-12-13 03:07:20.449693] 最终响应: 抱歉，我遇到了一点问题。请再说一次您的需求？
+[2025-12-13 03:19:39.346887] 收到请求: message=Hello, thread_id=None
+[2025-12-13 03:19:39.536021] 当前状态: has_values=False
+[2025-12-13 03:19:39.536021] 新对话，开始执行图
+[2025-12-13 03:19:40.492275] 图执行完成 - 新对话
+[2025-12-13 03:19:40.492275] 结果中的消息数量: 2
+[2025-12-13 03:19:40.493275] 最后一条消息: 抱歉，我遇到了一点问题。请再说一次您的需求？
+[2025-12-13 03:19:40.493275] 最终响应: 抱歉，我遇到了一点问题。请再说一次您的需求？
+[2025-12-13 03:19:44.537633] 收到请求: message=Write about winter skincare, thread_id=6aff5c60-18d9-44bf-8bdb-409771299bfb
+[2025-12-13 03:19:44.546145] 当前状态: has_values=True
+[2025-12-13 03:19:44.547151] 继续现有对话
+[2025-12-13 03:19:44.548148] 开始执行图 - 继续模式
+[2025-12-13 03:19:44.635595] 图执行完成
+[2025-12-13 03:19:44.635595] 结果中的消息数量: 4
+[2025-12-13 03:19:44.636594] 最后一条消息: 抱歉，我遇到了一点问题。请再说一次您的需求？
+[2025-12-13 03:19:44.636594] 最终响应: 抱歉，我遇到了一点问题。请再说一次您的需求？
+[2025-12-13 03:19:48.664823] 收到请求: message=Publish, thread_id=6aff5c60-18d9-44bf-8bdb-409771299bfb
+[2025-12-13 03:19:48.672102] 当前状态: has_values=True
+[2025-12-13 03:19:48.673105] 继续现有对话
+[2025-12-13 03:19:48.674105] 开始执行图 - 继续模式
+[2025-12-13 03:19:49.255072] 图执行完成
+[2025-12-13 03:19:49.256072] 结果中的消息数量: 6
+[2025-12-13 03:19:49.256072] 最后一条消息: 抱歉，我遇到了一点问题。请再说一次您的需求？
+[2025-12-13 03:19:49.256072] 最终响应: 抱歉，我遇到了一点问题。请再说一次您的需求？
+[2025-12-13 03:27:08.944165] 收到请求: message=Hello, thread_id=None
+[2025-12-13 03:27:09.119319] 当前状态: has_values=False
+[2025-12-13 03:27:09.120604] 新对话，开始执行图
+[2025-12-13 03:27:09.278544] 图执行完成 - 新对话
+[2025-12-13 03:27:09.278544] 结果中的消息数量: 2
+[2025-12-13 03:27:09.279543] 最后一条消息: 抱歉，我遇到了一点问题。请再说一次您的需求？
+[2025-12-13 03:27:09.280045] 最终响应: 抱歉，我遇到了一点问题。请再说一次您的需求？
+[2025-12-13 03:27:13.322761] 收到请求: message=Write about winter skincare, thread_id=6eb60779-8c9b-412e-a6fd-ac48aca0c3cf
+[2025-12-13 03:27:13.334703] 当前状态: has_values=True
+[2025-12-13 03:27:13.335704] 继续现有对话
+[2025-12-13 03:27:13.336702] 开始执行图 - 继续模式
+[2025-12-13 03:27:13.386423] 图执行完成
+[2025-12-13 03:27:13.386423] 结果中的消息数量: 4
+[2025-12-13 03:27:13.387424] 最后一条消息: 抱歉，我遇到了一点问题。请再说一次您的需求？
+[2025-12-13 03:27:13.387424] 最终响应: 抱歉，我遇到了一点问题。请再说一次您的需求？
+[2025-12-13 03:27:17.443197] 收到请求: message=Publish, thread_id=6eb60779-8c9b-412e-a6fd-ac48aca0c3cf
+[2025-12-13 03:27:17.455164] 当前状态: has_values=True
+[2025-12-13 03:27:17.455164] 继续现有对话
+[2025-12-13 03:27:17.457164] 开始执行图 - 继续模式
+[2025-12-13 03:27:17.532333] 图执行完成
+[2025-12-13 03:27:17.532333] 结果中的消息数量: 6
+[2025-12-13 03:27:17.532333] 最后一条消息: 抱歉，我遇到了一点问题。请再说一次您的需求？
+[2025-12-13 03:27:17.533334] 最终响应: 抱歉，我遇到了一点问题。请再说一次您的需求？
+[2025-12-13 03:32:25.415097] 收到请求: message=Hello, thread_id=None
+[2025-12-13 03:32:25.610886] 当前状态: has_values=False
+[2025-12-13 03:32:25.610886] 新对话，开始执行图
+[2025-12-13 03:32:26.063019] 图执行完成 - 新对话
+[2025-12-13 03:32:26.063019] 结果中的消息数量: 2
+[2025-12-13 03:32:26.063019] 最后一条消息: 抱歉，我遇到了一点问题。请再说一次您的需求？
+[2025-12-13 03:32:26.063019] 最终响应: 抱歉，我遇到了一点问题。请再说一次您的需求？
+[2025-12-13 03:32:30.119325] 收到请求: message=Write about winter skincare, thread_id=d878f69c-70cc-4809-80cf-c9ed7071aed2
+[2025-12-13 03:32:30.128333] 当前状态: has_values=True
+[2025-12-13 03:32:30.129762] 继续现有对话
+[2025-12-13 03:32:30.130763] 开始执行图 - 继续模式
+[2025-12-13 03:32:30.488323] 图执行完成
+[2025-12-13 03:32:30.488323] 结果中的消息数量: 4
+[2025-12-13 03:32:30.489668] 最后一条消息: 抱歉，我遇到了一点问题。请再说一次您的需求？
+[2025-12-13 03:32:30.489668] 最终响应: 抱歉，我遇到了一点问题。请再说一次您的需求？
+[2025-12-13 03:32:34.538475] 收到请求: message=Publish, thread_id=d878f69c-70cc-4809-80cf-c9ed7071aed2
+[2025-12-13 03:32:34.547985] 当前状态: has_values=True
+[2025-12-13 03:32:34.548988] 继续现有对话
+[2025-12-13 03:32:34.549987] 开始执行图 - 继续模式
+[2025-12-13 03:32:34.905237] 图执行完成
+[2025-12-13 03:32:34.906236] 结果中的消息数量: 6
+[2025-12-13 03:32:34.906236] 最后一条消息: 抱歉，我遇到了一点问题。请再说一次您的需求？
+[2025-12-13 03:32:34.906236] 最终响应: 抱歉，我遇到了一点问题。请再说一次您的需求？
+[2025-12-13 03:36:42.399077] 收到请求: message=Hello, thread_id=None
+[2025-12-13 03:36:42.405084] 当前状态: has_values=False
+[2025-12-13 03:36:42.405084] 新对话，开始执行图
+[2025-12-13 03:36:45.435478] 图执行完成 - 新对话
+[2025-12-13 03:36:45.435478] 结果中的消息数量: 2
+[2025-12-13 03:36:45.436612] 最后一条消息: 你好！我是你的小红书内容助手，可以帮你生成精美的小红书笔记。需要我帮你创作什么内容吗？✨
+[2025-12-13 03:36:45.436612] 最终响应: 你好！我是你的小红书内容助手，可以帮你生成精美的小红书笔记。需要我帮你创作什么内容吗？✨
+[2025-12-13 03:36:49.489753] 收到请求: message=Write about winter skincare, thread_id=06c7d420-9f54-4166-9dce-496c50214e3e
+[2025-12-13 03:36:49.498622] 当前状态: has_values=True
+[2025-12-13 03:36:49.498622] 继续现有对话
+[2025-12-13 03:36:49.501109] 开始执行图 - 继续模式
+[2025-12-13 03:38:22.002699] 图执行完成
+[2025-12-13 03:38:22.002699] 结果中的消息数量: 6
+[2025-12-13 03:38:22.003691] 最后一条消息: 任务已完成！还有什么需要我帮助的吗？
+[2025-12-13 03:38:22.003691] 最终响应: 任务已完成！还有什么需要我帮助的吗？
+[2025-12-13 03:59:12.703873] 收到请求: message=Hello, thread_id=None
+[2025-12-13 03:59:12.900268] 当前状态: has_values=False
+[2025-12-13 03:59:12.900268] 新对话，开始执行图
+[2025-12-13 03:59:16.465443] 图执行完成 - 新对话
+[2025-12-13 03:59:16.465443] 结果中的消息数量: 2
+[2025-12-13 03:59:16.465443] 最后一条消息: Hello! I'm your Xiaohongshu content assistant. I can help you create beautiful Xiaohongshu notes. What kind of content would you like me to create for you? ✨
+[2025-12-13 03:59:16.465443] 最终响应: Hello! I'm your Xiaohongshu content assistant. I can help you create beautiful Xiaohongshu notes. What kind of content would you like me to create for you? ✨
+[2025-12-13 03:59:20.525500] 收到请求: message=Write about winter skincare, thread_id=47813a18-97b5-4eec-a871-323b1a9e2836
+[2025-12-13 03:59:20.533772] 当前状态: has_values=True
+[2025-12-13 03:59:20.534777] 继续现有对话
+[2025-12-13 03:59:20.535783] 开始执行图 - 继续模式
+[2025-12-13 04:01:03.443088] 图执行完成
+[2025-12-13 04:01:03.443088] 结果中的消息数量: 6
+[2025-12-13 04:01:03.444175] 最后一条消息: 任务已完成！还有什么需要我帮助的吗？
+[2025-12-13 04:01:03.444175] 最终响应: 任务已完成！还有什么需要我帮助的吗？
+[2025-12-13 04:01:07.477045] 收到请求: message=Publish, thread_id=47813a18-97b5-4eec-a871-323b1a9e2836
+[2025-12-13 04:01:07.490501] 当前状态: has_values=True
+[2025-12-13 04:01:07.491501] 继续现有对话
+[2025-12-13 04:01:07.492501] 开始执行图 - 继续模式
+[2025-12-13 04:01:07.495006] 图执行完成
+[2025-12-13 04:01:07.495006] 结果中的消息数量: 8
+[2025-12-13 04:01:07.495006] 最后一条消息: 任务已完成！还有什么需要我帮助的吗？
+[2025-12-13 04:01:07.496004] 最终响应: 任务已完成！还有什么需要我帮助的吗？
+[2025-12-13 11:22:26.609351] 收到请求: message=Hello, thread_id=None
+[2025-12-13 11:22:26.613854] 当前状态: has_values=False
+[2025-12-13 11:22:26.614856] 新对话，开始执行图
+[2025-12-13 11:22:30.556000] 图执行完成 - 新对话
+[2025-12-13 11:22:30.557000] 结果中的消息数量: 2
+[2025-12-13 11:22:30.557000] 最后一条消息: Hello! I'm your Xiaohongshu content assistant. I can help you create beautiful Xiaohongshu notes. What kind of content would you like me to create for you? ✨
+[2025-12-13 11:22:30.557000] 最终响应: Hello! I'm your Xiaohongshu content assistant. I can help you create beautiful Xiaohongshu notes. What kind of content would you like me to create for you? ✨
+[2025-12-13 11:22:34.599376] 收到请求: message=Write about winter skincare, thread_id=74faad57-f9df-4599-bce8-f4769b296855
+[2025-12-13 11:22:34.604875] 当前状态: has_values=True
+[2025-12-13 11:22:34.604875] 继续现有对话
+[2025-12-13 11:22:34.606876] 开始执行图 - 继续模式
+[2025-12-13 11:24:15.219063] 图执行完成
+[2025-12-13 11:24:15.220064] 结果中的消息数量: 6
+[2025-12-13 11:24:15.220064] 最后一条消息: 任务已完成！还有什么需要我帮助的吗？
+[2025-12-13 11:24:15.221062] 最终响应: 任务已完成！还有什么需要我帮助的吗？
+[2025-12-13 11:24:19.255848] 收到请求: message=Publish, thread_id=74faad57-f9df-4599-bce8-f4769b296855
+[2025-12-13 11:24:19.262851] 当前状态: has_values=True
+[2025-12-13 11:24:19.263851] 继续现有对话
+[2025-12-13 11:24:19.264851] 开始执行图 - 继续模式
+[2025-12-13 11:24:19.267167] 图执行完成
+[2025-12-13 11:24:19.267167] 结果中的消息数量: 8
+[2025-12-13 11:24:19.267167] 最后一条消息: 任务已完成！还有什么需要我帮助的吗？
+[2025-12-13 11:24:19.268167] 最终响应: 任务已完成！还有什么需要我帮助的吗？
+[2025-12-13 11:29:11.906516] 收到请求: message=Hello, thread_id=None
+[2025-12-13 11:29:12.105546] 当前状态: has_values=False
+[2025-12-13 11:29:12.105546] 新对话，开始执行图
+[2025-12-13 11:29:17.513759] 图执行完成 - 新对话
+[2025-12-13 11:29:17.514759] 结果中的消息数量: 2
+[2025-12-13 11:29:17.514759] 最后一条消息: Hello! I'm your Xiaohongshu content assistant. I can help you create beautiful Xiaohongshu notes. What kind of content would you like me to create for you? ✨
+[2025-12-13 11:29:17.514759] 最终响应: Hello! I'm your Xiaohongshu content assistant. I can help you create beautiful Xiaohongshu notes. What kind of content would you like me to create for you? ✨
+[2025-12-13 11:29:21.557137] 收到请求: message=Write about winter skincare, thread_id=1f946225-eb10-4125-a799-7fbd476a4c21
+[2025-12-13 11:29:21.565402] 当前状态: has_values=True
+[2025-12-13 11:29:21.566401] 继续现有对话
+[2025-12-13 11:29:21.567402] 开始执行图 - 继续模式
+[2025-12-13 11:30:52.655624] 图执行完成
+[2025-12-13 11:30:52.655624] 结果中的消息数量: 6
+[2025-12-13 11:30:52.655624] 最后一条消息: 任务已完成！还有什么需要我帮助的吗？
+[2025-12-13 11:30:52.655624] 最终响应: 任务已完成！还有什么需要我帮助的吗？
+[2025-12-13 11:30:56.699566] 收到请求: message=Publish, thread_id=1f946225-eb10-4125-a799-7fbd476a4c21
+[2025-12-13 11:30:56.707564] 当前状态: has_values=True
+[2025-12-13 11:30:56.708636] 继续现有对话
+[2025-12-13 11:30:56.710637] 开始执行图 - 继续模式
+[2025-12-13 11:30:56.713138] 图执行完成
+[2025-12-13 11:30:56.713138] 结果中的消息数量: 8
+[2025-12-13 11:30:56.713138] 最后一条消息: 任务已完成！还有什么需要我帮助的吗？
+[2025-12-13 11:30:56.713138] 最终响应: 任务已完成！还有什么需要我帮助的吗？

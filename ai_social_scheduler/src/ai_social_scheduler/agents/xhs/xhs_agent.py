@@ -102,7 +102,7 @@ class XHSAgentNode:
     
     def __init__(
         self,
-        llm_model: str = "qwen-plus",
+        llm_model: str = "deepseek-chat",
         llm_temperature: float = 0.7,
     ):
         """初始化节点
@@ -285,7 +285,7 @@ class XHSAgentNode:
 # ============================================================================
 
 def create_xhs_agent_node(
-    llm_model: str = "qwen-plus",
+    llm_model: str = "deepseek-chat",
     llm_temperature: float = 0.7,
 ) -> XHSAgentNode:
     """创建小红书 Agent 节点

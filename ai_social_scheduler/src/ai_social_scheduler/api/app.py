@@ -110,6 +110,18 @@ def create_app(
                 "thread_id": "user_123"  # 可选
             }
         """
+        import datetime
+        
+        # 🔥 调试：写入请求日志
+        def debug_log(msg):
+            try:
+                with open("api_debug.txt", "a", encoding="utf-8") as f:
+                    f.write(f"[{datetime.datetime.now()}] {msg}\n")
+            except:
+                pass
+        
+        debug_log(f"收到请求: message={request.message}, thread_id={request.thread_id}")
+        
         try:
             # 获取或创建 thread_id
             thread_id = request.thread_id
@@ -125,26 +137,46 @@ def create_app(
                 {"configurable": {"thread_id": thread_id}}
             )
             
+            logger.info(f"当前状态: has_values={bool(current_state.values)}, thread_id={thread_id}")
+            debug_log(f"当前状态: has_values={bool(current_state.values)}")
+            
             if current_state.values:
                 # 继续现有对话 - 添加新消息
+                logger.info(f"继续现有对话，添加新消息: {request.message}")
+                debug_log(f"继续现有对话")
                 await app_graph.aupdate_state(
                     {"configurable": {"thread_id": thread_id}},
                     {"messages": [HumanMessage(content=request.message)]}
                 )
                 # 继续执行
+                logger.info("开始执行图...")
+                debug_log("开始执行图 - 继续模式")
                 result = await app_graph.ainvoke(
                     None,
                     config={"configurable": {"thread_id": thread_id}}
                 )
+                logger.info(f"图执行完成，结果类型: {type(result)}, keys: {result.keys() if isinstance(result, dict) else 'N/A'}")
+                debug_log(f"图执行完成")
             else:
                 # 新对话
+                logger.info(f"新对话，消息: {request.message}")
+                logger.info("开始执行图...")
+                debug_log(f"新对话，开始执行图")
                 result = await app_graph.ainvoke(
                     {"messages": [HumanMessage(content=request.message)]},
                     config={"configurable": {"thread_id": thread_id}}
                 )
+                logger.info(f"图执行完成，结果类型: {type(result)}, keys: {result.keys() if isinstance(result, dict) else 'N/A'}")
+                debug_log(f"图执行完成 - 新对话")
             
             # 提取 AI 回复
             messages = result.get("messages", [])
+            logger.info(f"结果中的消息数量: {len(messages)}")
+            debug_log(f"结果中的消息数量: {len(messages)}")
+            if messages:
+                logger.info(f"最后一条消息类型: {type(messages[-1])}, 内容: {messages[-1].content if hasattr(messages[-1], 'content') else 'N/A'}")
+                debug_log(f"最后一条消息: {messages[-1].content if hasattr(messages[-1], 'content') else 'N/A'}")
+            
             response_text = ""
             for msg in reversed(messages):
                 if hasattr(msg, "content") and msg.content:
@@ -154,11 +186,14 @@ def create_app(
             if not response_text:
                 response_text = "抱歉，我没有收到回复。"
             
+            debug_log(f"最终响应: {response_text}")
+            
             logger.info(
                 f"Chat completed",
                 thread_id=thread_id,
                 message_length=len(request.message),
-                response_length=len(response_text)
+                response_length=len(response_text),
+                response_preview=response_text[:100]
             )
             
             return ChatResponse(
@@ -168,6 +203,9 @@ def create_app(
             )
             
         except Exception as e:
+            debug_log(f"错误: {e}")
+            import traceback
+            debug_log(f"Traceback: {traceback.format_exc()}")
             logger.error(f"Chat failed: {e}", exc_info=True)
             raise HTTPException(status_code=500, detail=f"处理消息时出错: {str(e)}")
     

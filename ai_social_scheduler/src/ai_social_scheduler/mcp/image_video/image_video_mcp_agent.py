@@ -23,7 +23,7 @@ async def create_image_video_mcp_agent(
     name: str = "image_video_mcp",
     mcp_url: Optional[str] = None,
     mcp_transport: Optional[str] = None,
-    llm_model: str = "qwen-plus",
+    llm_model: str = "deepseek-chat",
     llm_temperature: float = 0.7,
     llm_api_key: Optional[str] = None,
 ) -> "ImageVideoMCPAgent":
@@ -66,7 +66,7 @@ class ImageVideoMCPAgent:
         name: str = "image_video_mcp",
         mcp_url: Optional[str] = None,
         mcp_transport: Optional[str] = None,
-        llm_model: str = "qwen-plus",
+        llm_model: str = "deepseek-chat",
         llm_temperature: float = 0.7,
         llm_api_key: Optional[str] = None,
     ):

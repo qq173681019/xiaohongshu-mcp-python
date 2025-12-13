@@ -1,0 +1,15 @@
+﻿
+1. 鍚姩 API 鏈嶅姟...
+绛夊緟鏈嶅姟鍚姩...
+
+2. 鍙戦€佹祴璇曡姹?..
+璇锋眰澶辫触: HTTPConnectionPool(host='localhost', port=8000): Read timed out. (read timeout=30)
+
+3. 妫€鏌ラ敊璇棩蹇?..
+鏈彂鐜?router_error.txt - 鍙兘娌℃湁閿欒
+
+4. 鍋滄鏈嶅姟...
+
+娴嬭瘯瀹屾垚!
+
+缁撴灉宸蹭繚瀛樺埌: C:\Users\admin\Documents\GitHub\xiaohongshu-mcp-python\ai_social_scheduler\test_results.txt

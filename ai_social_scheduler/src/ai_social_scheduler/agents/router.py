@@ -152,7 +152,7 @@ class RouterAgent(BaseAgent):
     def __init__(
         self,
         config: Optional[AgentConfig] = None,
-        llm_model: str = "qwen-plus",
+        llm_model: str = "deepseek-chat",
         temperature: float = 0.3,  # Router 使用较低温度以保证稳定性
     ):
         """初始化 Router Agent"""
@@ -174,7 +174,13 @@ class RouterAgent(BaseAgent):
     def structured_llm(self):
         """获取支持结构化输出的 LLM"""
         if self._structured_llm is None:
+<<<<<<< Updated upstream
             self._structured_llm = self.llm.with_structured_output(RouterOutput)
+=======
+            # DeepSeek 不支持 response_format 参数
+            # 直接使用 LLM，依赖系统提示词要求 JSON 输出
+            self._structured_llm = self.llm
+>>>>>>> Stashed changes
         return self._structured_llm
     
     async def _execute(self, state: AgentState) -> dict[str, Any]:
@@ -258,7 +264,25 @@ class RouterAgent(BaseAgent):
             }
             
         except Exception as e:
+<<<<<<< Updated upstream
             self.logger.error(f"Router decision failed: {e}")
+=======
+            self.logger.error(f"Router decision failed: {e}", exc_info=True)
+            import traceback
+            self.logger.error(f"Traceback: {traceback.format_exc()}")
+            
+            # 🔥 调试：写入错误到文件
+            try:
+                with open("router_error.txt", "a", encoding="utf-8") as f:
+                    import datetime
+                    f.write(f"\n{'='*60}\n")
+                    f.write(f"时间: {datetime.datetime.now()}\n")
+                    f.write(f"错误: {e}\n")
+                    f.write(f"Traceback:\n{traceback.format_exc()}\n")
+            except:
+                pass
+            
+>>>>>>> Stashed changes
             # 出错时返回等待状态
             return self._create_fallback_response(state, str(e))
     
@@ -339,7 +363,7 @@ class RouterAgent(BaseAgent):
 # ============================================================================
 
 def create_router_agent(
-    llm_model: str = "qwen-plus",
+    llm_model: str = "deepseek-chat",
     temperature: float = 0.3,
 ) -> RouterAgent:
     """创建 Router Agent 实例

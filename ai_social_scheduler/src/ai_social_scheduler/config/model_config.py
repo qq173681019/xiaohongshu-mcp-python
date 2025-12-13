@@ -122,7 +122,7 @@ class ModelConfig(BaseSettings):
             api_secret=self.alibaba_bailian__api_secret,
             endpoint=self.alibaba_bailian__endpoint
             or "https://dashscope.aliyuncs.com/compatible-mode/v1",
-            model=self.alibaba_bailian__model or "qwen-plus",
+            model=self.alibaba_bailian__model or "deepseek-chat",
             temperature=self.alibaba_bailian__temperature or 0.7,
             max_tokens=self.alibaba_bailian__max_tokens,
             timeout=self.alibaba_bailian__timeout or 60,

@@ -70,10 +70,11 @@ class QwenClient(BaseLLMClient):
 
     def _create_client(self):
         """创建 LangChain ChatOpenAI 客户端"""
-        # 处理 API Key 格式（如果需要）
+        # DeepSeek API key 已经包含 sk- 前缀，直接使用
         api_key = self.api_key
-        if not api_key.startswith("sk-"):
-            api_key = f"sk-{api_key}"
+
+        # 🔥 调试日志
+        logger.info(f"Creating ChatOpenAI client: model={self.model}, endpoint={self.endpoint}, key={api_key[:15]}...")
 
         return ChatOpenAI(
             model=self.model,

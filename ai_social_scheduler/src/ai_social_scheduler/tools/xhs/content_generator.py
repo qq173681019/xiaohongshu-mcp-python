@@ -31,13 +31,23 @@ async def _get_services():
         _content_service = await create_xhs_content_generator_service()
         logger.info("Content service initialized")
     
+    # 图片服务暂时禁用（可选）
     if _image_service is None:
-        _image_service = await create_image_video_mcp_service()
-        logger.info("Image service initialized")
+        try:
+            _image_service = await create_image_video_mcp_service()
+            logger.info("Image service initialized")
+        except Exception as e:
+            logger.warning(f"Image service unavailable, skipping: {e}")
+            _image_service = None
     
+    # 发布服务暂时禁用（可选）
     if _publish_service is None:
-        _publish_service = await create_xiaohongshu_browser_mcp_service()
-        logger.info("Publish service initialized")
+        try:
+            _publish_service = await create_xiaohongshu_browser_mcp_service()
+            logger.info("Publish service initialized")
+        except Exception as e:
+            logger.warning(f"Publish service unavailable, skipping: {e}")
+            _publish_service = None
     
     return _content_service, _image_service, _publish_service
 
@@ -81,28 +91,34 @@ async def _generate_content_workflow(
         tags = content_result.get('tags', [])
         pages = content_result.get('pages', [])
         
-        # 步骤2: 生成图片
+        # 步骤2: 生成图片（如果图片服务可用）
         logger.info("Generating images", count=image_count)
         image_urls = []
         
-        if pages:
-            # 使用批量生成
-            image_result = await image_service.generate_images_batch(
-                pages=pages[:image_count],
-                full_outline=content_result.get('outline', ''),
-                user_topic=description,
-                max_wait_time=600,
-            )
-            if image_result.get('success'):
-                image_urls = [img.get('url') for img in image_result.get('images', []) if img.get('url')]
+        if image_service is not None:
+            try:
+                if pages:
+                    # 使用批量生成
+                    image_result = await image_service.generate_images_batch(
+                        pages=pages[:image_count],
+                        full_outline=content_result.get('outline', ''),
+                        user_topic=description,
+                        max_wait_time=600,
+                    )
+                    if image_result.get('success'):
+                        image_urls = [img.get('url') for img in image_result.get('images', []) if img.get('url')]
+                else:
+                    # 单个生成
+                    for i in range(image_count):
+                        image_result = await image_service.generate_image(
+                            prompt=f"{description} - 图片{i+1}",
+                        )
+                        if image_result.get('success') and image_result.get('url'):
+                            image_urls.append(image_result['url'])
+            except Exception as e:
+                logger.warning(f"Image generation failed, continuing without images: {e}")
         else:
-            # 单个生成
-            for i in range(image_count):
-                image_result = await image_service.generate_image(
-                    prompt=f"{description} - 图片{i+1}",
-                )
-                if image_result.get('success') and image_result.get('url'):
-                    image_urls.append(image_result['url'])
+            logger.info("Image service not available, skipping image generation")
         
         result = {
             "success": True,
@@ -115,20 +131,37 @@ async def _generate_content_workflow(
             "publish": None,
         }
         
-        # 步骤3: 发布到小红书（如果需要）
-        if publish and image_urls:
-            logger.info("Publishing to Xiaohongshu")
-            publish_result = await publish_service.publish_content(
-                title=title,
-                content=result["content"]["content"],
-                images=image_urls,
-                tags=tags,
-            )
-            result["publish"] = publish_result
-            result["success"] = publish_result.get("success", False)
-        elif publish and not image_urls:
-            result["success"] = False
-            result["error"] = "没有可用的图片，无法发布"
+        # 步骤3: 发布到小红书（如果需要且服务可用）
+        if publish:
+            if publish_service is None:
+                logger.warning("Publish service not available, content generated but not published")
+                result["publish"] = {
+                    "success": False,
+                    "message": "发布服务未启动，内容已生成但未发布。可以手动复制内容发布。"
+                }
+            elif not image_urls:
+                logger.warning("No images available for publishing")
+                result["publish"] = {
+                    "success": False,
+                    "message": "没有可用的图片，建议添加图片后再发布"
+                }
+            else:
+                try:
+                    logger.info("Publishing to Xiaohongshu")
+                    publish_result = await publish_service.publish_content(
+                        title=title,
+                        content=result["content"]["content"],
+                        images=image_urls,
+                        tags=tags,
+                    )
+                    result["publish"] = publish_result
+                    result["success"] = publish_result.get("success", False)
+                except Exception as e:
+                    logger.error(f"Publishing failed: {e}")
+                    result["publish"] = {
+                        "success": False,
+                        "message": f"发布失败: {str(e)}"
+                    }
         
         return result
         

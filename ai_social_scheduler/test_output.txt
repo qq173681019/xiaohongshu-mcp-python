@@ -1,0 +1,38 @@
+============================================================
+测试 Router Agent - 使用 __call__ 方法
+============================================================
+2025-12-08 23:27:08 [info     ] Agent initialized: router      config={'name': 'router', 'description': '智能路由与意图分析 Agent', 'llm_model': 'deepseek-chat', 'temperature': 0.3, 'max_retries': 3, 'timeout': 60}
+
+测试输入: 你好
+
+正在调用 Router Agent...
+2025-12-08 23:27:08 [info     ] Agent router invoked           message_count=1
+2025-12-08 23:27:08 [info     ] Router analyzing intent        user_input=你好
+2025-12-08 23:27:12 [info     ] LLM 原始响应（前200字符）: {
+  "next_agent": "wait",
+  "intent": "casual_chat",
+  "reasoning": "用户打招呼，等待进一步指令",
+  "response": "你好！我是你的小红书内容助手，可以帮你生成精美的小红书笔记。需要我帮你创作什么内容吗？✨",
+  "extracted_params": {},
+  "confidence": 1.0
+}
+2025-12-08 23:27:12 [info     ] 直接提取 JSON
+2025-12-08 23:27:12 [info     ] 提取的 JSON（前200字符）: {
+  "next_agent": "wait",
+  "intent": "casual_chat",
+  "reasoning": "用户打招呼，等待进一步指令",
+  "response": "你好！我是你的小红书内容助手，可以帮你生成精美的小红书笔记。需要我帮你创作什么内容吗？✨",
+  "extracted_params": {},
+  "confidence": 1.0
+}
+2025-12-08 23:27:12 [info     ] JSON 解析成功: {'next_agent': 'wait', 'intent': 'casual_chat', 'reasoning': '用户打招呼，等待进一步指令', 'response': '你好！我是你的小红书内容助手，可以帮你生成精美的小红书笔记。需要我帮你创作什么内容吗？✨', 'extracted_params': {}, 'confidence': 1.0}
+2025-12-08 23:27:12 [info     ] Router decision made           confidence=1.0 intent=casual_chat next_agent=wait
+2025-12-08 23:27:12 [info     ] Agent router completed successfully
+
+✅ 执行成功!
+   结果类型: <class 'dict'>
+   结果keys: dict_keys(['messages', 'decision', 'current_agent', 'task_context', 'iteration_count'])
+   决策: next_agent=<NextAgent.WAIT: 'wait'> intent=<IntentType.CASUAL_CHAT: 'casual_chat'> reasoning='用户打招呼，等待进一步指令' response='你好！我是你的小红书内容助手，可以帮你生成精美的小红书笔记。需要我帮你创作什么内容吗？✨' extracted_params={} confidence=1.0
+   AI 回复: 你好！我是你的小红书内容助手，可以帮你生成精美的小红书笔记。需要我帮你创作什么内容吗？✨
+
+输出已保存到 test_output.txt

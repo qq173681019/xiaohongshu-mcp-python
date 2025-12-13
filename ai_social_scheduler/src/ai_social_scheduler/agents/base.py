@@ -46,7 +46,7 @@ class BaseAgent(ABC):
         config: Optional[AgentConfig] = None,
         name: Optional[str] = None,
         description: str = "",
-        llm_model: str = "qwen-plus",
+        llm_model: str = "deepseek-chat",
         temperature: float = 0.7,
     ):
         """初始化 Agent

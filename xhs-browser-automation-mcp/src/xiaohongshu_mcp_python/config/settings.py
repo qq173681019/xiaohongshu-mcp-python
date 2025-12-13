@@ -62,7 +62,7 @@ class Settings:
     SERVER_PORT: int = int(os.getenv("SERVER_PORT", "8000"))
     
     # 全局用户配置
-    GLOBAL_USER: str = os.getenv("GLOBAL_USER", "luyike")
+    GLOBAL_USER: str = os.getenv("GLOBAL_USER", "default_user")
     
     # 浏览器超时配置
     PAGE_LOAD_TIMEOUT: int = int(os.getenv("PAGE_LOAD_TIMEOUT", "60000"))
